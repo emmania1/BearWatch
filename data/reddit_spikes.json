@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-03-31T00:08:30.718309+00:00",
+  "total_spikes": 9,
+  "spikes": [
+    {
+      "month": "2023-02",
+      "subreddit": "buildabear",
+      "post_count": 2344,
+      "rolling_avg": 1457.0,
+      "spike_ratio": 1.61,
+      "nearest_event": "Valentine's Day / Pay Your Age",
+      "days_from_event": 0
+    },
+    {
+      "month": "2024-08",
+      "subreddit": "buildabear",
+      "post_count": 3552,
+      "rolling_avg": 2077.7,
+      "spike_ratio": 1.71,
+      "nearest_event": "Star Wars Day 2024",
+      "days_from_event": 92
+    },
+    {
+      "month": "2025-08",
+      "subreddit": "buildabear",
+      "post_count": 3448,
+      "rolling_avg": 2099.7,
+      "spike_ratio": 1.64,
+      "nearest_event": "Star Wars Day 2025",
+      "days_from_event": 92
+    },
+    {
+      "month": "2024-01",
+      "subreddit": "squishmallows",
+      "post_count": 295,
+      "rolling_avg": 194.3,
+      "spike_ratio": 1.52,
+      "nearest_event": "Valentine's Day 2024",
+      "days_from_event": 31
+    },
+    {
+      "month": "2025-09",
+      "subreddit": "squishmallows",
+      "post_count": 56,
+      "rolling_avg": 37.3,
+      "spike_ratio": 1.5,
+      "nearest_event": "Holiday 2025",
+      "days_from_event": 61
+    },
+    {
+      "month": "2024-02",
+      "subreddit": "stuffedanimals",
+      "post_count": 116,
+      "rolling_avg": 33.0,
+      "spike_ratio": 3.52,
+      "nearest_event": "Valentine's Day 2024",
+      "days_from_event": 0
+    },
+    {
+      "month": "2024-03",
+      "subreddit": "stuffedanimals",
+      "post_count": 122,
+      "rolling_avg": 71.7,
+      "spike_ratio": 1.7,
+      "nearest_event": "Valentine's Day 2024",
+      "days_from_event": 29
+    },
+    {
+      "month": "2024-12",
+      "subreddit": "stuffedanimals",
+      "post_count": 287,
+      "rolling_avg": 177.7,
+      "spike_ratio": 1.62,
+      "nearest_event": "Holiday 2024",
+      "days_from_event": 30
+    },
+    {
+      "month": "2025-05",
+      "subreddit": "stuffedanimals",
+      "post_count": 559,
+      "rolling_avg": 329.7,
+      "spike_ratio": 1.7,
+      "nearest_event": "Star Wars Day 2025",
+      "days_from_event": 0
+    }
+  ]
+}

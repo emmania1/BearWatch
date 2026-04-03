@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-04-02T19:22:10.506746+00:00",
+  "week_ending": "2026-04-02",
+  "subreddits": {
+    "buildabear": {
+      "week_ending": "2026-04-02",
+      "subreddit": "buildabear",
+      "subscribers": 74664,
+      "post_count": 100,
+      "total_score": 4795,
+      "avg_score": 48.0,
+      "total_comments": 477,
+      "avg_comments": 4.8,
+      "avg_upvote_ratio": 0.984
+    },
+    "squishmallows": {
+      "week_ending": "2026-04-02",
+      "subreddit": "squishmallows",
+      "subscribers": 25483,
+      "post_count": 8,
+      "total_score": 150,
+      "avg_score": 18.8,
+      "total_comments": 13,
+      "avg_comments": 1.6,
+      "avg_upvote_ratio": 0.992
+    },
+    "stuffedanimals": {
+      "week_ending": "2026-04-02",
+      "subreddit": "stuffedanimals",
+      "subscribers": 32744,
+      "post_count": 100,
+      "total_score": 3664,
+      "avg_score": 36.6,
+      "total_comments": 615,
+      "avg_comments": 6.2,
+      "avg_upvote_ratio": 0.969
+    },
+    "bluey": {
+      "week_ending": "2026-04-02",
+      "subreddit": "bluey",
+      "subscribers": 249064,
+      "post_count": 100,
+      "total_score": 11606,
+      "avg_score": 116.1,
+      "total_comments": 1805,
+      "avg_comments": 18.1,
+      "avg_upvote_ratio": 0.877
+    },
+    "TheMandalorianTV": {
+      "week_ending": "2026-04-02",
+      "subreddit": "TheMandalorianTV",
+      "subscribers": 647260,
+      "post_count": 12,
+      "total_score": 1558,
+      "avg_score": 129.8,
+      "total_comments": 76,
+      "avg_comments": 6.3,
+      "avg_upvote_ratio": 0.933
+    },
+    "plushies": {
+      "week_ending": "2026-04-02",
+      "subreddit": "plushies",
+      "subscribers": 155747,
+      "post_count": 100,
+      "total_score": 5710,
+      "avg_score": 57.1,
+      "total_comments": 839,
+      "avg_comments": 8.4,
+      "avg_upvote_ratio": 0.912
+    }
+  }
+}

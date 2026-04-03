@@ -1,0 +1,397 @@
+{
+  "generated_at": "2026-03-31T04:10:06.316728+00:00",
+  "period": {
+    "start": "2019-01",
+    "end": "2026-03"
+  },
+  "latest_month": "2026-03",
+  "latest_snapshots": 0,
+  "mom_change_pct": null,
+  "6mo_avg": 0.0,
+  "trend_vs_prior_6mo_pct": -100.0,
+  "peak_month": "2022-06",
+  "peak_snapshots": 10000,
+  "spikes": [
+    {
+      "month": "2019-05",
+      "total_snapshots": 3042,
+      "rolling_avg": 957.0,
+      "spike_ratio": 3.18
+    },
+    {
+      "month": "2019-06",
+      "total_snapshots": 1848,
+      "rolling_avg": 1014.0,
+      "spike_ratio": 1.82
+    },
+    {
+      "month": "2019-07",
+      "total_snapshots": 4644,
+      "rolling_avg": 1630.0,
+      "spike_ratio": 2.85
+    },
+    {
+      "month": "2022-07",
+      "total_snapshots": 10000,
+      "rolling_avg": 3333.3,
+      "spike_ratio": 3.0
+    },
+    {
+      "month": "2023-02",
+      "total_snapshots": 10000,
+      "rolling_avg": 3333.3,
+      "spike_ratio": 3.0
+    }
+  ],
+  "spike_count": 5,
+  "monthly_series": [
+    {
+      "month": "2019-01",
+      "snapshots": 0
+    },
+    {
+      "month": "2019-02",
+      "snapshots": 2871
+    },
+    {
+      "month": "2019-03",
+      "snapshots": 0
+    },
+    {
+      "month": "2019-04",
+      "snapshots": 0
+    },
+    {
+      "month": "2019-05",
+      "snapshots": 3042
+    },
+    {
+      "month": "2019-06",
+      "snapshots": 1848
+    },
+    {
+      "month": "2019-07",
+      "snapshots": 4644
+    },
+    {
+      "month": "2019-08",
+      "snapshots": 0
+    },
+    {
+      "month": "2019-09",
+      "snapshots": 0
+    },
+    {
+      "month": "2019-10",
+      "snapshots": 0
+    },
+    {
+      "month": "2019-11",
+      "snapshots": 0
+    },
+    {
+      "month": "2019-12",
+      "snapshots": 0
+    },
+    {
+      "month": "2020-01",
+      "snapshots": 0
+    },
+    {
+      "month": "2020-02",
+      "snapshots": 0
+    },
+    {
+      "month": "2020-03",
+      "snapshots": 0
+    },
+    {
+      "month": "2020-04",
+      "snapshots": 0
+    },
+    {
+      "month": "2020-05",
+      "snapshots": 0
+    },
+    {
+      "month": "2020-06",
+      "snapshots": 0
+    },
+    {
+      "month": "2020-07",
+      "snapshots": 5348
+    },
+    {
+      "month": "2020-08",
+      "snapshots": 0
+    },
+    {
+      "month": "2020-09",
+      "snapshots": 0
+    },
+    {
+      "month": "2020-10",
+      "snapshots": 0
+    },
+    {
+      "month": "2020-11",
+      "snapshots": 0
+    },
+    {
+      "month": "2020-12",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-01",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-02",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-03",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-04",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-05",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-06",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-07",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-08",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-09",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-10",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-11",
+      "snapshots": 0
+    },
+    {
+      "month": "2021-12",
+      "snapshots": 0
+    },
+    {
+      "month": "2022-01",
+      "snapshots": 0
+    },
+    {
+      "month": "2022-02",
+      "snapshots": 0
+    },
+    {
+      "month": "2022-03",
+      "snapshots": 0
+    },
+    {
+      "month": "2022-04",
+      "snapshots": 0
+    },
+    {
+      "month": "2022-05",
+      "snapshots": 0
+    },
+    {
+      "month": "2022-06",
+      "snapshots": 10000
+    },
+    {
+      "month": "2022-07",
+      "snapshots": 10000
+    },
+    {
+      "month": "2022-08",
+      "snapshots": 0
+    },
+    {
+      "month": "2022-09",
+      "snapshots": 0
+    },
+    {
+      "month": "2022-10",
+      "snapshots": 0
+    },
+    {
+      "month": "2022-11",
+      "snapshots": 0
+    },
+    {
+      "month": "2022-12",
+      "snapshots": 0
+    },
+    {
+      "month": "2023-01",
+      "snapshots": 10000
+    },
+    {
+      "month": "2023-02",
+      "snapshots": 10000
+    },
+    {
+      "month": "2023-03",
+      "snapshots": 0
+    },
+    {
+      "month": "2023-04",
+      "snapshots": 0
+    },
+    {
+      "month": "2023-05",
+      "snapshots": 0
+    },
+    {
+      "month": "2023-06",
+      "snapshots": 0
+    },
+    {
+      "month": "2023-07",
+      "snapshots": 0
+    },
+    {
+      "month": "2023-08",
+      "snapshots": 0
+    },
+    {
+      "month": "2023-09",
+      "snapshots": 0
+    },
+    {
+      "month": "2023-10",
+      "snapshots": 0
+    },
+    {
+      "month": "2023-11",
+      "snapshots": 10000
+    },
+    {
+      "month": "2023-12",
+      "snapshots": 0
+    },
+    {
+      "month": "2024-01",
+      "snapshots": 0
+    },
+    {
+      "month": "2024-02",
+      "snapshots": 0
+    },
+    {
+      "month": "2024-03",
+      "snapshots": 0
+    },
+    {
+      "month": "2024-04",
+      "snapshots": 10000
+    },
+    {
+      "month": "2024-05",
+      "snapshots": 0
+    },
+    {
+      "month": "2024-06",
+      "snapshots": 0
+    },
+    {
+      "month": "2024-07",
+      "snapshots": 0
+    },
+    {
+      "month": "2024-08",
+      "snapshots": 10000
+    },
+    {
+      "month": "2024-09",
+      "snapshots": 0
+    },
+    {
+      "month": "2024-10",
+      "snapshots": 0
+    },
+    {
+      "month": "2024-11",
+      "snapshots": 0
+    },
+    {
+      "month": "2024-12",
+      "snapshots": 0
+    },
+    {
+      "month": "2025-01",
+      "snapshots": 0
+    },
+    {
+      "month": "2025-02",
+      "snapshots": 0
+    },
+    {
+      "month": "2025-03",
+      "snapshots": 0
+    },
+    {
+      "month": "2025-04",
+      "snapshots": 0
+    },
+    {
+      "month": "2025-05",
+      "snapshots": 0
+    },
+    {
+      "month": "2025-06",
+      "snapshots": 0
+    },
+    {
+      "month": "2025-07",
+      "snapshots": 0
+    },
+    {
+      "month": "2025-08",
+      "snapshots": 10000
+    },
+    {
+      "month": "2025-09",
+      "snapshots": 0
+    },
+    {
+      "month": "2025-10",
+      "snapshots": 0
+    },
+    {
+      "month": "2025-11",
+      "snapshots": 0
+    },
+    {
+      "month": "2025-12",
+      "snapshots": 0
+    },
+    {
+      "month": "2026-01",
+      "snapshots": 0
+    },
+    {
+      "month": "2026-02",
+      "snapshots": 0
+    },
+    {
+      "month": "2026-03",
+      "snapshots": 0
+    }
+  ]
+}

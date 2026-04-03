@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEARWATCH — BBW Demand Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* BBW brand palette */
+  --navy:        #1a3a6b;
+  --navy-mid:    #254d8f;
+  --navy-light:  #d6e2f5;
+  --navy-xlight: #eef3fb;
+  --gold:        #f5a800;
+  --gold-light:  #fef3d0;
+  --gold-dark:   #c07f00;
+  --cream:       #fdf9f2;
+  --white:       #ffffff;
+
+  /* Semantic */
+  --text:        #1a2235;
+  --text2:       #4a5568;
+  --muted:       #8a96a8;
+  --border:      #e2e8f0;
+  --border2:     #c8d5e8;
+
+  /* Status */
+  --pending-bg:  #f1f5f9;
+  --pending-fg:  #7a8a9e;
+  --live-bg:     #e6f4ea;
+  --live-fg:     #2d7a47;
+  --setup-bg:    #fff8e6;
+  --setup-fg:    #9a6800;
+
+  --shadow-sm:   0 1px 4px rgba(26,58,107,0.07);
+  --shadow-md:   0 4px 16px rgba(26,58,107,0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+/* Subtle grid texture */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image:
+    linear-gradient(var(--navy-light) 1px, transparent 1px),
+    linear-gradient(90deg, var(--navy-light) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.18;
+}
+
+.page { position: relative; z-index: 1; }
+
+/* ── HEADER ── */
+header {
+  background: var(--navy);
+  padding: 0 36px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 2px 12px rgba(26,58,107,0.25);
+}
+
+.logo-group {
+  display: flex; align-items: center; gap: 16px;
+}
+
+.logo-mark {
+  width: 34px; height: 34px;
+  background: var(--gold);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.logo-mark svg { width: 20px; height: 20px; }
+
+.logo-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+
+.logo-divider {
+  width: 1px; height: 20px;
+  background: rgba(255,255,255,0.25);
+}
+
+.logo-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.header-center {
+  display: flex; gap: 6px;
+}
+
+.nav-pill {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: all 0.18s;
+}
+.nav-pill:hover { background: rgba(255,255,255,0.1); color: #fff; }
+.nav-pill.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex; align-items: center; gap: 14px;
+}
+
+.status-chip {
+  display: flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.08em;
+}
+
+.pulse-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--gold);
+  animation: pulse 2.5s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+.brief-btn {
+  background: var(--gold);
+  color: var(--navy);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: all 0.18s;
+}
+.brief-btn:hover {
+  background: #ffc133;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(245,168,0,0.35);
+}
+
+.timestamp {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: rgba(255,255,255,0.4);
+}
+
+/* ── MAIN ── */
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 28px 36px 72px;
+  display: flex; flex-direction: column; gap: 24px;
+}
+
+/* ── SECTION LABEL ── */
+.section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  display: flex; align-items: center; gap: 10px;
+}
+.section-label::after {
+  content: '';
+  flex: 1; height: 1px;
+  background: var(--border);
+}
+
+/* ── ALERT BANNER ── */
+.banner {
+  background: var(--white);
+  border: 1.5px solid var(--gold);
+  border-left: 4px solid var(--gold);
+  border-radius: 10px;
+  padding: 14px 20px;
+  display: flex; align-items: flex-start; gap: 16px;
+  box-shadow: var(--shadow-sm);
+}
+.banner-icon {
+  width: 28px; height: 28px; flex-shrink: 0;
+  background: var(--gold-light);
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+}
+.banner-icon svg { width: 14px; height: 14px; }
+.banner-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+.banner-body { font-size: 12px; color: var(--text2); line-height: 1.5; }
+.banner-tag {
+  margin-left: auto; flex-shrink: 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px; font-weight: 500;
+  color: var(--navy-mid);
+  background: var(--navy-xlight);
+  border: 1px solid var(--navy-light);
+  border-radius: 6px;
+  padding: 4px 10px;
+  align-self: center;
+}
+
+/* ── QUESTION CARDS ── */
+.questions-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.q-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px 18px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.q-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+
+.q-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--navy-light);
+  border-radius: 14px 14px 0 0;
+}
+.q-card.has-data::after { background: var(--navy); }
+
+.q-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.18em;
+  margin-bottom: 8px;
+}
+
+.q-question {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px; font-weight: 700;
+  color: var(--text);
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.q-answer-block {
+  background: var(--pending-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+.q-answer-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px; font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.q-answer-value {
+  font-size: 12px; font-weight: 600;
+  color: var(--pending-fg);
+}
+.q-answer-value.live { color: var(--navy); }
+
+.q-sources {
+  font-size: 10px; color: var(--muted);
+  line-height: 1.5;
+}
+.q-sources strong { color: var(--text2); font-weight: 600; }
+
+/* ── SIGNAL CARDS ── */
+.signals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.sig-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.sig-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+
+.sig-top {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.sig-icon-wrap {
+  width: 34px; height: 34px;
+  border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+}
+.sig-icon-wrap svg { width: 16px; height: 16px; }
+.icon-navy { background: var(--navy-xlight); }
+.icon-gold { background: var(--gold-light); }
+
+.sig-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px; font-weight: 500;
+  letter-spacing: 0.12em;
+  padding: 3px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+.badge-pending { background: var(--pending-bg); color: var(--pending-fg); border: 1px solid var(--border); }
+.badge-live    { background: var(--live-bg);    color: var(--live-fg);    border: 1px solid #b7dfc3; }
+.badge-setup   { background: var(--setup-bg);   color: var(--setup-fg);   border: 1px solid #f0d88a; }
+
+.sig-label {
+  font-size: 10px; font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.sig-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px; font-weight: 900;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 3px;
+}
+.sig-value.pending {
+  font-family: 'DM Mono', monospace;
+  font-size: 13px; font-weight: 500;
+  color: var(--pending-fg);
+}
+
+.sig-sub {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.sig-spark {
+  height: 32px;
+  width: 100%;
+}
+.sig-spark svg { width: 100%; height: 32px; }
+
+/* ── CHART + CALENDAR ROW ── */
+.two-col {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.panel {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 26px;
+  box-shadow: var(--shadow-sm);
+}
+
+.panel-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px; font-weight: 700;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+.panel-sub {
+  font-size: 11px; color: var(--muted); font-weight: 500;
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+/* IP Release items */
+.release-list { display: flex; flex-direction: column; gap: 8px; }
+
+.release-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 14px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: background 0.15s;
+  cursor: default;
+}
+.release-item:hover { background: var(--navy-xlight); }
+
+.release-date {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; color: var(--muted);
+  min-width: 54px; font-weight: 500;
+}
+
+.release-dot {
+  width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+}
+.dot-high   { background: var(--navy); }
+.dot-med    { background: var(--gold-dark); }
+.dot-watch  { background: var(--border2); }
+
+.release-info { flex: 1; }
+.release-name { font-size: 12px; font-weight: 600; color: var(--text); }
+.release-type { font-size: 10px; color: var(--muted); font-weight: 500; margin-top: 1px; }
+
+.release-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; font-weight: 500;
+  padding: 3px 8px; border-radius: 5px;
+}
+.tag-high  { background: var(--navy-xlight); color: var(--navy); border: 1px solid var(--navy-light); }
+.tag-med   { background: var(--gold-light);  color: var(--gold-dark); border: 1px solid #f0d88a; }
+.tag-watch { background: var(--pending-bg);  color: var(--pending-fg); border: 1px solid var(--border); }
+
+/* ── BOTTOM ROW ── */
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* Footprint table rows */
+.foot-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+}
+.foot-row:last-child { border-bottom: none; }
+.foot-label { font-size: 12px; font-weight: 600; color: var(--text2); }
+.foot-note  { font-size: 10px; color: var(--muted); margin-top: 1px; }
+.foot-val   { font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 500; color: var(--navy); }
+
+/* Pipeline rows */
+.pipe-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+}
+.pipe-row:last-child { border-bottom: none; }
+.pipe-dot {
+  width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0;
+}
+.pdot-live    { background: var(--live-fg); }
+.pdot-setup   { background: var(--gold); animation: pulse 2s infinite; }
+.pdot-planned { background: var(--border2); }
+.pipe-name { font-size: 12px; font-weight: 600; color: var(--text); flex: 1; }
+.pipe-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px; padding: 2px 7px; border-radius: 5px;
+}
+.ptag-live    { background: var(--live-bg);    color: var(--live-fg); }
+.ptag-setup   { background: var(--setup-bg);   color: var(--setup-fg); }
+.ptag-planned { background: var(--pending-bg); color: var(--pending-fg); }
+
+/* Macro thesis */
+.macro-row {
+  padding: 10px 14px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  margin-bottom: 7px;
+}
+.macro-row:last-child { margin-bottom: 0; }
+.macro-title { font-size: 12px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+.macro-body  { font-size: 11px; color: var(--text2); line-height: 1.45; }
+
+/* ── REPORT MODAL ── */
+.modal-backdrop {
+  position: fixed; inset: 0; z-index: 500;
+  background: rgba(26,58,107,0.45);
+  backdrop-filter: blur(5px);
+  display: none; align-items: center; justify-content: center;
+}
+.modal-backdrop.open { display: flex; }
+
+.modal {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 36px 40px;
+  max-width: 600px; width: 90%;
+  max-height: 80vh; overflow-y: auto;
+  border: 1.5px solid var(--border);
+  box-shadow: 0 24px 60px rgba(26,58,107,0.2);
+}
+.modal-hdr {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 22px;
+}
+.modal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px; font-weight: 900; color: var(--text);
+}
+.modal-date {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; color: var(--muted); margin-top: 3px;
+}
+.modal-close {
+  width: 30px; height: 30px;
+  border: 1.5px solid var(--border); border-radius: 50%;
+  background: none; cursor: pointer;
+  font-size: 14px; color: var(--muted);
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.15s;
+}
+.modal-close:hover { background: var(--cream); color: var(--text); }
+.modal-body { font-size: 13px; line-height: 1.7; color: var(--text2); }
+.modal-body h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px; font-weight: 700; color: var(--text);
+  margin: 18px 0 6px;
+}
+.modal-body p { margin-bottom: 8px; }
+.modal-loader {
+  display: flex; align-items: center; gap: 10px;
+  color: var(--muted); font-size: 13px; font-weight: 500;
+  padding: 16px 0;
+}
+.spinner {
+  width: 18px; height: 18px;
+  border: 2px solid var(--border);
+  border-top-color: var(--navy);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1100px) {
+  .questions-row  { grid-template-columns: repeat(2, 1fr); }
+  .signals-grid   { grid-template-columns: repeat(2, 1fr); }
+  .two-col        { grid-template-columns: 1fr; }
+  .three-col      { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="logo-group">
+    <div class="logo-mark">
+      <!-- Bear silhouette icon -->
+      <svg viewBox="0 0 20 20" fill="none">
+        <circle cx="6.5" cy="5" r="2.5" fill="var(--navy)"/>
+        <circle cx="13.5" cy="5" r="2.5" fill="var(--navy)"/>
+        <ellipse cx="10" cy="12" rx="6.5" ry="6" fill="var(--navy)"/>
+        <circle cx="10" cy="10.5" r="3.5" fill="var(--gold)"/>
+      </svg>
+    </div>
+    <div>
+      <div class="logo-name">BEARWATCH</div>
+      <div class="logo-sub">BBW Demand Intelligence</div>
+    </div>
+    <div class="logo-divider"></div>
+    <div class="logo-sub">Pillsbury Lake Capital</div>
+  </div>
+
+  <div class="header-center">
+    <button class="nav-pill active">Overview</button>
+    <button class="nav-pill">Web Traffic</button>
+    <button class="nav-pill">IP Releases</button>
+    <button class="nav-pill">Commercial</button>
+    <button class="nav-pill">Macro</button>
+  </div>
+
+  <div class="header-right">
+    <button class="brief-btn" onclick="openBrief()">Generate Brief</button>
+    <div class="status-chip"><div class="pulse-dot"></div> Monitoring</div>
+    <div class="timestamp" id="clock">—</div>
+  </div>
+</header>
+
+<!-- ── MAIN ── -->
+<div class="main">
+
+  <!-- ALERT BANNER -->
+  <div class="banner">
+    <div class="banner-icon">
+      <svg viewBox="0 0 16 16" fill="none">
+        <path d="M8 2L14.5 13H1.5L8 2Z" stroke="var(--gold-dark)" stroke-width="1.5" stroke-linejoin="round"/>
+        <line x1="8" y1="6.5" x2="8" y2="9.5" stroke="var(--gold-dark)" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="8" cy="11.5" r="0.75" fill="var(--gold-dark)"/>
+      </svg>
+    </div>
+    <div>
+      <div class="banner-title">Watch: FY26 guidance miss driven by tariff costs — revenue growth intact</div>
+      <div class="banner-body">Stock down significantly on the guide. Incremental tariff costs + investment spend are the culprit, not a demand issue. Monitor web traffic closely for any softening signal. FY27 earnings growth expected to resume. Walmart trial (1,500 stores) is the near-term data point to watch.</div>
+    </div>
+    <div class="banner-tag">BBW $38.73 · PT $63</div>
+  </div>
+
+  <!-- ── INTELLIGENCE QUESTIONS ── -->
+  <div>
+    <div class="section-label">Intelligence Questions — answers populate from live data feeds</div>
+    <div class="questions-row">
+
+      <div class="q-card">
+        <div class="q-num">Q1 · Consumer Demand</div>
+        <div class="q-question">Is BBW consumer demand holding up?</div>
+        <div class="q-answer-block">
+          <div class="q-answer-label">Current answer</div>
+          <div class="q-answer-value live">Reddit active (100 posts/wk, 74K subs) · Wayback: 10K+ crawls at peaks, 5 spikes since 2019</div>
+        </div>
+        <div class="q-sources">
+          <strong>Feeds:</strong> buildabear.com crawl activity (Wayback CDX) · Google Trends index · Reddit community volume<br>
+          <strong>Threshold:</strong> Flag if traffic drops &gt;10% WoW vs 8-week avg
+        </div>
+      </div>
+
+      <div class="q-card">
+        <div class="q-num">Q2 · IP Release Spikes</div>
+        <div class="q-question">Are major IP drops driving traffic spikes?</div>
+        <div class="q-answer-block">
+          <div class="q-answer-label">Current answer</div>
+          <div class="q-answer-value">No active spike events</div>
+        </div>
+        <div class="q-sources">
+          <strong>Feeds:</strong> Google Trends spike detection · Reddit post volume surge · Release calendar flag<br>
+          <strong>Benchmark:</strong> Baby Yoda Nov 2020 — 4–5x baseline over 2 weeks
+        </div>
+      </div>
+
+      <div class="q-card">
+        <div class="q-num">Q3 · Commercial Scaling</div>
+        <div class="q-question">Is the partner model expanding as expected?</div>
+        <div class="q-answer-block">
+          <div class="q-answer-label">Current answer</div>
+          <div class="q-answer-value">178 locations as of Q4 2025</div>
+        </div>
+        <div class="q-sources">
+          <strong>Feeds:</strong> Press release monitor · BBW IR page · Walmart trial sell-through checks<br>
+          <strong>Update cadence:</strong> Quarterly (earnings) + real-time on press releases
+        </div>
+      </div>
+
+      <div class="q-card">
+        <div class="q-num">Q4 · Macro Resilience</div>
+        <div class="q-question">How is the model holding up to macro pressure?</div>
+        <div class="q-answer-block">
+          <div class="q-answer-label">Current answer</div>
+          <div class="q-answer-value">Store traffic deferred (Oleg)</div>
+        </div>
+        <div class="q-sources">
+          <strong>Feeds:</strong> Placer.ai foot traffic (paused) · Historical rev vs recession yrs · Kidult demand index<br>
+          <strong>Note:</strong> Oleg flagged store traffic as misleading near-term
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── SIGNAL CARDS ── -->
+  <div>
+    <div class="section-label">Live Signal Cards — Reddit feed active</div>
+    <div class="signals-grid">
+
+      <!-- Web traffic -->
+      <div class="sig-card">
+        <div class="sig-top">
+          <div class="sig-icon-wrap icon-navy">
+            <svg viewBox="0 0 16 16" fill="none">
+              <circle cx="8" cy="8" r="6.5" stroke="var(--navy-mid)" stroke-width="1.3"/>
+              <ellipse cx="8" cy="8" rx="3" ry="6.5" stroke="var(--navy-mid)" stroke-width="1.3"/>
+              <line x1="1.5" y1="8" x2="14.5" y2="8" stroke="var(--navy-mid)" stroke-width="1.3"/>
+            </svg>
+          </div>
+          <span class="sig-badge badge-live">Live</span>
+        </div>
+        <div class="sig-label">buildabear.com — Wayback crawl activity</div>
+        <div class="sig-value">10,000+ snapshots/mo at peaks · 5 spikes detected</div>
+        <div class="sig-sub">Source: Wayback Machine CDX API · 2019-01 → 2026-03 · Peak: Jun 2022 (10K)</div>
+        <div class="sig-spark">
+          <svg viewBox="0 0 120 32" fill="none">
+            <polyline points="0,28 6,26 12,28 18,28 24,20 30,22 36,14 42,28 48,28 54,28 60,28 66,28 72,28 78,28 84,28 90,28 96,28 102,28 108,8 114,8 120,28" stroke="var(--navy)" stroke-width="1.5"/>
+            <circle cx="108" cy="8" r="2" fill="var(--accent)"/>
+            <text x="85" y="6" font-size="7" fill="var(--accent)" font-family="monospace">10K</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Google Trends -->
+      <div class="sig-card">
+        <div class="sig-top">
+          <div class="sig-icon-wrap icon-navy">
+            <svg viewBox="0 0 16 16" fill="none">
+              <circle cx="7" cy="7" r="4.5" stroke="var(--navy-mid)" stroke-width="1.3"/>
+              <line x1="10.5" y1="10.5" x2="14" y2="14" stroke="var(--navy-mid)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="sig-badge badge-setup">Setup</span>
+        </div>
+        <div class="sig-label">Google Trends — "Build-A-Bear"</div>
+        <div class="sig-value pending">— pending —</div>
+        <div class="sig-sub">Source: pytrends Python scraper · weekly auto-pull</div>
+        <div class="sig-spark">
+          <svg viewBox="0 0 120 32" fill="none">
+            <polyline points="0,26 20,24 40,22 60,24 80,20 100,22 120,19" stroke="var(--border2)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Reddit -->
+      <div class="sig-card">
+        <div class="sig-top">
+          <div class="sig-icon-wrap icon-navy">
+            <svg viewBox="0 0 16 16" fill="none">
+              <circle cx="8" cy="9" r="5" stroke="var(--navy-mid)" stroke-width="1.3"/>
+              <circle cx="5.5" cy="8.5" r="1" fill="var(--navy-mid)"/>
+              <circle cx="10.5" cy="8.5" r="1" fill="var(--navy-mid)"/>
+              <path d="M5.5 11C6.3 11.8 9.7 11.8 10.5 11" stroke="var(--navy-mid)" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+              <circle cx="11.5" cy="4" r="1.3" fill="var(--navy-mid)"/>
+              <line x1="10.5" y1="5" x2="9.5" y2="6.5" stroke="var(--navy-mid)" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="sig-badge badge-live">Live</span>
+        </div>
+        <div class="sig-label">r/buildabear — weekly post volume</div>
+        <div class="sig-value">100 posts  ·  74,546 members</div>
+        <div class="sig-sub">Avg score 72.8 · 774 comments this week · via public JSON API</div>
+        <div class="sig-spark">
+          <svg viewBox="0 0 120 32" fill="none">
+            <polyline points="0,26 20,23 40,25 60,21 80,22 100,20 120,18" stroke="var(--border2)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- IP Spike Tracker -->
+      <div class="sig-card">
+        <div class="sig-top">
+          <div class="sig-icon-wrap icon-gold">
+            <svg viewBox="0 0 16 16" fill="none">
+              <polygon points="8,2 10,6.5 15,7 11.5,10.5 12.5,15 8,12.5 3.5,15 4.5,10.5 1,7 6,6.5" stroke="var(--gold-dark)" stroke-width="1.2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="sig-badge badge-pending">Watching</span>
+        </div>
+        <div class="sig-label">IP release spike tracker</div>
+        <div class="sig-value pending">0 active spikes</div>
+        <div class="sig-sub">Benchmark: Baby Yoda 2020 — 4–5x vs 90-day avg</div>
+        <div class="sig-spark">
+          <!-- Shows Baby Yoda spike shape as benchmark reference -->
+          <svg viewBox="0 0 120 32" fill="none">
+            <polyline points="0,28 15,27 25,26 38,8 42,5 46,8 60,24 80,27 120,28" stroke="var(--navy-light)" stroke-width="1.5"/>
+            <text x="34" y="4" font-size="7" fill="var(--muted)" font-family="monospace">2020 benchmark</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Walmart trial -->
+      <div class="sig-card">
+        <div class="sig-top">
+          <div class="sig-icon-wrap icon-navy">
+            <svg viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="7" width="12" height="8" rx="1.5" stroke="var(--navy-mid)" stroke-width="1.3"/>
+              <path d="M5 7V5a3 3 0 0 1 6 0v2" stroke="var(--navy-mid)" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="sig-badge badge-live">Live</span>
+        </div>
+        <div class="sig-label">Walmart trial — stores live</div>
+        <div class="sig-value">1,500</div>
+        <div class="sig-sub">3M units shipped early · replenishment = signal</div>
+        <div class="sig-spark">
+          <svg viewBox="0 0 120 32" fill="none">
+            <line x1="78" y1="0" x2="78" y2="32" stroke="var(--border)" stroke-width="1" stroke-dasharray="3 2"/>
+            <polyline points="0,28 70,27 78,8 120,7" stroke="var(--navy)" stroke-width="2"/>
+            <text x="80" y="10" font-size="7" fill="var(--navy)" font-family="monospace">launch</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Commercial locations -->
+      <div class="sig-card">
+        <div class="sig-top">
+          <div class="sig-icon-wrap icon-navy">
+            <svg viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="6" width="12" height="9" rx="1.5" stroke="var(--navy-mid)" stroke-width="1.3"/>
+              <path d="M5 6V4.5a3 3 0 0 1 6 0V6" stroke="var(--navy-mid)" stroke-width="1.3" stroke-linecap="round"/>
+              <line x1="8" y1="9" x2="8" y2="12" stroke="var(--navy-mid)" stroke-width="1.2" stroke-linecap="round"/>
+              <line x1="6" y1="10.5" x2="10" y2="10.5" stroke="var(--navy-mid)" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="sig-badge badge-live">Live</span>
+        </div>
+        <div class="sig-label">Commercial partner locations</div>
+        <div class="sig-value">178</div>
+        <div class="sig-sub">~27% of total footprint · Q4 2025 figure</div>
+        <div class="sig-spark">
+          <svg viewBox="0 0 120 32" fill="none">
+            <polyline points="0,30 20,27 40,23 60,19 80,15 100,11 120,8" stroke="var(--navy)" stroke-width="2.5"/>
+            <circle cx="120" cy="8" r="3" fill="var(--navy)"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Store traffic -->
+      <div class="sig-card">
+        <div class="sig-top">
+          <div class="sig-icon-wrap icon-navy">
+            <svg viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="5" width="12" height="10" rx="1.5" stroke="var(--navy-mid)" stroke-width="1.3"/>
+              <path d="M2 8h12" stroke="var(--navy-mid)" stroke-width="1.3"/>
+              <path d="M6 5V3.5a2 2 0 0 1 4 0V5" stroke="var(--navy-mid)" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="sig-badge badge-pending">Deferred</span>
+        </div>
+        <div class="sig-label">Store foot traffic (Placer.ai)</div>
+        <div class="sig-value pending">On hold</div>
+        <div class="sig-sub">Oleg: "misleading near-term" — revisit Q3 2026</div>
+        <div class="sig-spark">
+          <svg viewBox="0 0 120 32" fill="none">
+            <polyline points="0,18 20,16 40,20 60,17 80,19 100,16 120,18" stroke="var(--border2)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Social sentiment -->
+      <div class="sig-card">
+        <div class="sig-top">
+          <div class="sig-icon-wrap icon-gold">
+            <svg viewBox="0 0 16 16" fill="none">
+              <path d="M8 2C4.7 2 2 4.4 2 7.4c0 1.7.8 3.2 2.1 4.2L3.5 14l2.6-1.1c.6.2 1.2.3 1.9.3 3.3 0 6-2.4 6-5.4S11.3 2 8 2z" stroke="var(--gold-dark)" stroke-width="1.3" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="sig-badge badge-setup">Setup</span>
+        </div>
+        <div class="sig-label">Brand sentiment — social</div>
+        <div class="sig-value pending">— pending —</div>
+        <div class="sig-sub">Source: Reddit + TikTok · NLP scoring planned</div>
+        <div class="sig-spark">
+          <svg viewBox="0 0 120 32" fill="none">
+            <polyline points="0,20 20,18 40,16 60,19 80,15 100,17 120,14" stroke="var(--border2)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── CHART + IP CALENDAR ── -->
+  <div class="two-col">
+
+    <!-- Composite trend chart -->
+    <div class="panel">
+      <div class="panel-title">Composite Demand Signal</div>
+      <div class="panel-sub">Indexed weekly score across all active signals. Baby Yoda Nov 2020 shown as benchmark. Chart populates as scrapers come online.</div>
+      <svg width="100%" viewBox="0 0 560 170" style="margin-top:4px">
+        <!-- Grid -->
+        <line x1="0" y1="140" x2="560" y2="140" stroke="var(--border)" stroke-width="1"/>
+        <line x1="0" y1="105" x2="560" y2="105" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="4 4"/>
+        <line x1="0" y1="70"  x2="560" y2="70"  stroke="var(--border)" stroke-width="0.5" stroke-dasharray="4 4"/>
+        <line x1="0" y1="35"  x2="560" y2="35"  stroke="var(--border)" stroke-width="0.5" stroke-dasharray="4 4"/>
+        <!-- Y labels -->
+        <text x="4" y="143" font-size="8" fill="#8a96a8" font-family="monospace">0</text>
+        <text x="4" y="108" font-size="8" fill="#8a96a8" font-family="monospace">25</text>
+        <text x="4" y="73"  font-size="8" fill="#8a96a8" font-family="monospace">50</text>
+        <text x="4" y="38"  font-size="8" fill="#8a96a8" font-family="monospace">75</text>
+        <!-- Baby Yoda benchmark (historical, faded navy) -->
+        <polyline points="20,138 60,136 90,138 110,35 118,28 126,35 150,100 175,132 200,138 560,138"
+          stroke="#1a3a6b" stroke-width="1.2" stroke-dasharray="5 3" fill="none" opacity="0.25"/>
+        <text x="108" y="24" font-size="8" fill="#1a3a6b" font-family="monospace" opacity="0.5">Baby Yoda benchmark (Nov 2020)</text>
+        <!-- Current line — pending, so very flat near baseline -->
+        <polyline points="300,138 330,136 360,135 390,134 420,136 450,133 480,132 510,133 540,131 560,130"
+          stroke="var(--navy)" stroke-width="2" fill="none"/>
+        <polygon points="300,140 330,136 360,135 390,134 420,136 450,133 480,132 510,133 540,131 560,130 560,140"
+          fill="var(--navy)" opacity="0.06"/>
+        <!-- NOW marker -->
+        <line x1="560" y1="20" x2="560" y2="140" stroke="var(--gold)" stroke-width="1" stroke-dasharray="3 2" opacity="0.8"/>
+        <text x="532" y="18" font-size="8" fill="var(--gold-dark)" font-family="monospace">NOW</text>
+        <!-- X labels -->
+        <text x="295" y="155" font-size="8" fill="#8a96a8" font-family="monospace">Jan 2026</text>
+        <text x="385" y="155" font-size="8" fill="#8a96a8" font-family="monospace">Feb 2026</text>
+        <text x="480" y="155" font-size="8" fill="#8a96a8" font-family="monospace">Mar 2026</text>
+        <!-- Legend -->
+        <line x1="20" y1="165" x2="42" y2="165" stroke="var(--navy)" stroke-width="1.2" stroke-dasharray="4 2" opacity="0.4"/>
+        <text x="46" y="168" font-size="8" fill="#8a96a8" font-family="monospace">Baby Yoda benchmark</text>
+        <line x1="200" y1="165" x2="222" y2="165" stroke="var(--navy)" stroke-width="2"/>
+        <text x="226" y="168" font-size="8" fill="#8a96a8" font-family="monospace">Current composite (data pending)</text>
+      </svg>
+    </div>
+
+    <!-- IP Release Calendar -->
+    <div class="panel">
+      <div class="panel-title">IP Release Calendar</div>
+      <div class="panel-sub">Track online signals around each release. Oleg: "check statistics at release time."</div>
+      <div class="release-list">
+        <div class="release-item">
+          <div class="release-date">Q2 2026</div>
+          <div class="release-dot dot-high"></div>
+          <div class="release-info">
+            <div class="release-name">Pokemon Collaboration Drop</div>
+            <div class="release-type">Kidult · high search intent · confirm dates</div>
+          </div>
+          <div class="release-tag tag-high">High</div>
+        </div>
+        <div class="release-item">
+          <div class="release-date">Q2 2026</div>
+          <div class="release-dot dot-high"></div>
+          <div class="release-info">
+            <div class="release-name">Star Wars Release Tie-in</div>
+            <div class="release-type">Adults + kids · film-linked · confirm dates</div>
+          </div>
+          <div class="release-tag tag-high">High</div>
+        </div>
+        <div class="release-item">
+          <div class="release-date">Q3 2026</div>
+          <div class="release-dot dot-med"></div>
+          <div class="release-info">
+            <div class="release-name">Major Animated Film TBD</div>
+            <div class="release-type">Kids core · research existing licenses</div>
+          </div>
+          <div class="release-tag tag-med">Medium</div>
+        </div>
+        <div class="release-item">
+          <div class="release-date">Ongoing</div>
+          <div class="release-dot dot-watch"></div>
+          <div class="release-info">
+            <div class="release-name">Walmart Microbeans / Mini-Beans</div>
+            <div class="release-type">New product · 1,500-store trial · replenishment watch</div>
+          </div>
+          <div class="release-tag tag-watch">Watch</div>
+        </div>
+        <div class="release-item">
+          <div class="release-date">Ongoing</div>
+          <div class="release-dot dot-watch"></div>
+          <div class="release-info">
+            <div class="release-name">Skoosherz vs. Squishmallow</div>
+            <div class="release-type">IP litigation · CA federal court · monitor</div>
+          </div>
+          <div class="release-tag tag-watch">Litigation</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── BOTTOM ROW ── -->
+  <div class="three-col">
+
+    <!-- Footprint tracker -->
+    <div class="panel">
+      <div class="panel-title">Footprint Tracker</div>
+      <div style="margin-top:4px">
+        <div class="foot-row">
+          <div><div class="foot-label">Commercial Partner Locations</div><div class="foot-note">Carnival, Girl Scouts, etc.</div></div>
+          <div class="foot-val">178</div>
+        </div>
+        <div class="foot-row">
+          <div><div class="foot-label">Walmart Trial Stores</div><div class="foot-note">Microbeans · in-cap branded</div></div>
+          <div class="foot-val">1,500</div>
+        </div>
+        <div class="foot-row">
+          <div><div class="foot-label">UK Locations</div><div class="foot-note">Standalone + tourist sites</div></div>
+          <div class="foot-val">35</div>
+        </div>
+        <div class="foot-row">
+          <div><div class="foot-label">Germany Locations</div><div class="foot-note">Outpacing UK on per-store rev</div></div>
+          <div class="foot-val">4</div>
+        </div>
+        <div class="foot-row">
+          <div><div class="foot-label">Italy (Partner SIS)</div><div class="foot-note">In-store toy store concession</div></div>
+          <div class="foot-val">New</div>
+        </div>
+        <div class="foot-row">
+          <div><div class="foot-label">ROIC (Current)</div><div class="foot-note">vs. ~7% in 2018</div></div>
+          <div class="foot-val">~20%</div>
+        </div>
+        <div class="foot-row">
+          <div><div class="foot-label">Commercial % of Pre-Tax Income</div><div class="foot-note">Q4 2025</div></div>
+          <div class="foot-val">~27%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Pipeline -->
+    <div class="panel">
+      <div class="panel-title">Data Pipeline Status</div>
+      <div style="margin-top:4px">
+        <div class="pipe-row">
+          <div class="pipe-dot pdot-live"></div>
+          <div class="pipe-name">Commercial location count</div>
+          <div class="pipe-tag ptag-live">Live</div>
+        </div>
+        <div class="pipe-row">
+          <div class="pipe-dot pdot-live"></div>
+          <div class="pipe-name">Walmart trial store count</div>
+          <div class="pipe-tag ptag-live">Live</div>
+        </div>
+        <div class="pipe-row">
+          <div class="pipe-dot pdot-setup"></div>
+          <div class="pipe-name">Google Trends — pytrends scraper</div>
+          <div class="pipe-tag ptag-setup">Setup</div>
+        </div>
+        <div class="pipe-row">
+          <div class="pipe-dot pdot-live"></div>
+          <div class="pipe-name">Reddit PRAW — r/buildabear</div>
+          <div class="pipe-tag ptag-live">Live</div>
+        </div>
+        <div class="pipe-row">
+          <div class="pipe-dot pdot-live"></div>
+          <div class="pipe-name">buildabear.com traffic (Wayback CDX)</div>
+          <div class="pipe-tag ptag-live">Live</div>
+        </div>
+        <div class="pipe-row">
+          <div class="pipe-dot pdot-planned"></div>
+          <div class="pipe-name">IP release calendar feed</div>
+          <div class="pipe-tag ptag-planned">Planned</div>
+        </div>
+        <div class="pipe-row">
+          <div class="pipe-dot pdot-planned"></div>
+          <div class="pipe-name">Social sentiment (NLP)</div>
+          <div class="pipe-tag ptag-planned">Planned</div>
+        </div>
+        <div class="pipe-row">
+          <div class="pipe-dot pdot-planned"></div>
+          <div class="pipe-name">Placer.ai foot traffic</div>
+          <div class="pipe-tag ptag-planned">Deferred</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Macro resilience thesis -->
+    <div class="panel">
+      <div class="panel-title">Macro Resilience Thesis</div>
+      <div style="margin-top:8px">
+        <div class="macro-row">
+          <div class="macro-title">Staycation trade-down beneficiary</div>
+          <div class="macro-body">Consumers fly less in downturns → more local experiential spend → BBW captures share from travel and theme parks.</div>
+        </div>
+        <div class="macro-row">
+          <div class="macro-title">Parents protect kids spending</div>
+          <div class="macro-body">Children's entertainment historically sticky even in recessions. BBW's birthday "mousetrap" (Pay Your Age) creates recurring visits.</div>
+        </div>
+        <div class="macro-row">
+          <div class="macro-title">Kidult demand — different cycle</div>
+          <div class="macro-body">Growth-stage category with its own demand cycle. Acts as a natural buffer against softness in the core kids segment.</div>
+        </div>
+        <div class="macro-row">
+          <div class="macro-title">Lease flexibility = low fixed cost risk</div>
+          <div class="macro-body">SIS model and rev-share leases are highly cancellable. ~2022 revenue up 16% despite macro uncertainty.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div><!-- /main -->
+
+<!-- ── REPORT MODAL ── -->
+<div class="modal-backdrop" id="modal" onclick="handleBackdrop(event)">
+  <div class="modal">
+    <div class="modal-hdr">
+      <div>
+        <div class="modal-title">BBW Weekly Intelligence Brief</div>
+        <div class="modal-date" id="modal-date">—</div>
+      </div>
+      <button class="modal-close" onclick="closeBrief()">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body">
+      <div class="modal-loader"><div class="spinner"></div> Generating brief...</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Clock
+function tick() {
+  document.getElementById('clock').textContent = new Date().toUTCString().replace('GMT','UTC');
+}
+tick(); setInterval(tick, 1000);
+
+// Nav tabs
+document.querySelectorAll('.nav-pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.nav-pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+
+// Brief modal
+function openBrief() {
+  document.getElementById('modal-date').textContent = 'Generated: ' + new Date().toUTCString();
+  document.getElementById('modal-body').innerHTML =
+    '<div class="modal-loader"><div class="spinner"></div> Generating brief...</div>';
+  document.getElementById('modal').classList.add('open');
+  setTimeout(renderBrief, 1000);
+}
+function closeBrief() {
+  document.getElementById('modal').classList.remove('open');
+}
+function handleBackdrop(e) {
+  if (e.target === document.getElementById('modal')) closeBrief();
+}
+function renderBrief() {
+  document.getElementById('modal-body').innerHTML = `
+    <p><strong>Summary:</strong> BBW demand signals are broadly constructive. FY26 guidance miss is a cost story (tariffs + investment), not a revenue or demand story. Five consecutive record years through FY25. Key near-term watchpoints: Walmart Microbeans replenishment signal and upcoming Pokemon/Star Wars IP drops.</p>
+    <h4>Web Traffic and Search</h4>
+    <p>Pipeline not yet connected. Once pytrends and SimilarWeb feeds are live, the dashboard will auto-flag any week where buildabear.com traffic or search index drops more than 10% below the 8-week rolling average. Priority: set up pytrends first — it is free, fully automated, and the fastest to deploy.</p>
+    <h4>IP Release Watch</h4>
+    <p>Pokemon and Star Wars are the highest-priority upcoming drops. The Baby Yoda release (November 2020) is the internal benchmark: search volume spiked approximately 4–5x vs. the 90-day baseline over a two-week window. Confirm exact release dates and set calendar flags two weeks in advance.</p>
+    <h4>Commercial Segment</h4>
+    <p>178 commercial partner locations as of Q4 2025, representing approximately 27% of total footprint and a similar share of pre-tax income. ROIC has moved from ~7% in 2018 to over 20%. The Walmart trial across 1,500 stores is the single most important near-term data point — replenishment orders will be the first hard read on sell-through velocity.</p>
+    <h4>European Expansion</h4>
+    <p>Italy opened via toy store SIS partnership. Germany (4 locations) is already outpacing UK (35 locations) on a per-store revenue basis per management. Low-base economics mean near-term European macro risk is contained. War implications for European strategy remain a discussion point with management — Oleg flagged this as a key agenda item.</p>
+    <h4>Action Items</h4>
+    <p>Set up pytrends Google Trends scraper. Build out Reddit PRAW collector for r/buildabear. Manually research and calendar all 2026 IP release dates. Check Walmart store near office for in-person Microbeans assessment. Monitor Skoosherz CA federal case for ruling updates.</p>
+  `;
+}
+</script>
+</body>
+</html>

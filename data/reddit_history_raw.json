@@ -1,0 +1,2004 @@
+{
+  "generated_at": "2026-03-31T00:08:30.711190+00:00",
+  "period": {
+    "start": "2022-01",
+    "end": "2026-03"
+  },
+  "subreddits": {
+    "buildabear": {
+      "2022-01": {
+        "metrics": {
+          "post_count": 710,
+          "total_score": 19712,
+          "avg_score": 27.8,
+          "total_comments": 3015,
+          "avg_comments": 4.2,
+          "avg_upvote_ratio": 0.968,
+          "top_post_title": "Just saw this on Facebook \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d!!!",
+          "top_post_score": 199
+        },
+        "post_count_raw": 710
+      },
+      "2022-02": {
+        "metrics": {
+          "post_count": 1016,
+          "total_score": 28986,
+          "avg_score": 28.5,
+          "total_comments": 5695,
+          "avg_comments": 5.6,
+          "avg_upvote_ratio": 0.948,
+          "top_post_title": "don\u2019t talk to me or my son or my son\u2019s son ever again! also, don\u2019t talk to our cat!",
+          "top_post_score": 233
+        },
+        "post_count_raw": 1016
+      },
+      "2022-03": {
+        "metrics": {
+          "post_count": 1259,
+          "total_score": 34156,
+          "avg_score": 27.1,
+          "total_comments": 6241,
+          "avg_comments": 5.0,
+          "avg_upvote_ratio": 0.945,
+          "top_post_title": "BAB groups today be like",
+          "top_post_score": 259
+        },
+        "post_count_raw": 1259
+      },
+      "2022-04": {
+        "metrics": {
+          "post_count": 735,
+          "total_score": 18941,
+          "avg_score": 25.8,
+          "total_comments": 3725,
+          "avg_comments": 5.1,
+          "avg_upvote_ratio": 0.925,
+          "top_post_title": "Adventures with Tim!",
+          "top_post_score": 216
+        },
+        "post_count_raw": 735
+      },
+      "2022-05": {
+        "metrics": {
+          "post_count": 1080,
+          "total_score": 27007,
+          "avg_score": 25.0,
+          "total_comments": 6177,
+          "avg_comments": 5.7,
+          "avg_upvote_ratio": 0.929,
+          "top_post_title": "Since BAB is selling both a cow and an alien it had to be done!!",
+          "top_post_score": 257
+        },
+        "post_count_raw": 1080
+      },
+      "2022-06": {
+        "metrics": {
+          "post_count": 912,
+          "total_score": 28076,
+          "avg_score": 30.8,
+          "total_comments": 4502,
+          "avg_comments": 4.9,
+          "avg_upvote_ratio": 0.935,
+          "top_post_title": "Rainbow frog is here! The colors look amazing in person. Name suggestions welcome!",
+          "top_post_score": 243
+        },
+        "post_count_raw": 912
+      },
+      "2022-07": {
+        "metrics": {
+          "post_count": 827,
+          "total_score": 21090,
+          "avg_score": 25.5,
+          "total_comments": 4629,
+          "avg_comments": 5.6,
+          "avg_upvote_ratio": 0.941,
+          "top_post_title": "little working man, toast!",
+          "top_post_score": 188
+        },
+        "post_count_raw": 827
+      },
+      "2022-08": {
+        "metrics": {
+          "post_count": 1123,
+          "total_score": 29526,
+          "avg_score": 26.3,
+          "total_comments": 6418,
+          "avg_comments": 5.7,
+          "avg_upvote_ratio": 0.938,
+          "top_post_title": "My boy with his top surgery scars. Isn't he handsome?",
+          "top_post_score": 230
+        },
+        "post_count_raw": 1123
+      },
+      "2022-09": {
+        "metrics": {
+          "post_count": 1205,
+          "total_score": 34464,
+          "avg_score": 28.6,
+          "total_comments": 7658,
+          "avg_comments": 6.4,
+          "avg_upvote_ratio": 0.944,
+          "top_post_title": "Froggie fairy went on an adventure \ud83d\udc96\u2728",
+          "top_post_score": 251
+        },
+        "post_count_raw": 1205
+      },
+      "2022-10": {
+        "metrics": {
+          "post_count": 1537,
+          "total_score": 45939,
+          "avg_score": 29.9,
+          "total_comments": 9475,
+          "avg_comments": 6.2,
+          "avg_upvote_ratio": 0.932,
+          "top_post_title": "I dyed a polar bear to make them look like Bear in the Big Blue House",
+          "top_post_score": 348
+        },
+        "post_count_raw": 1537
+      },
+      "2022-11": {
+        "metrics": {
+          "post_count": 1285,
+          "total_score": 38628,
+          "avg_score": 30.1,
+          "total_comments": 7688,
+          "avg_comments": 6.0,
+          "avg_upvote_ratio": 0.94,
+          "top_post_title": "Build A bear reposted my costume on their IG! I'm honestly crying this is so cool! I had to share with you all!",
+          "top_post_score": 293
+        },
+        "post_count_raw": 1285
+      },
+      "2022-12": {
+        "metrics": {
+          "post_count": 1175,
+          "total_score": 35224,
+          "avg_score": 30.0,
+          "total_comments": 6840,
+          "avg_comments": 5.8,
+          "avg_upvote_ratio": 0.932,
+          "top_post_title": "Tie Dye pink frog coming soon \ud83d\udc38",
+          "top_post_score": 365
+        },
+        "post_count_raw": 1175
+      },
+      "2023-01": {
+        "metrics": {
+          "post_count": 1911,
+          "total_score": 59677,
+          "avg_score": 31.2,
+          "total_comments": 12767,
+          "avg_comments": 6.7,
+          "avg_upvote_ratio": 0.913,
+          "top_post_title": "He is here and he is beautiful! \ud83e\udd70",
+          "top_post_score": 430
+        },
+        "post_count_raw": 1911
+      },
+      "2023-02": {
+        "metrics": {
+          "post_count": 2344,
+          "total_score": 75030,
+          "avg_score": 32.0,
+          "total_comments": 16348,
+          "avg_comments": 7.0,
+          "avg_upvote_ratio": 0.911,
+          "top_post_title": "Cinnamoroll on a budget..",
+          "top_post_score": 474
+        },
+        "post_count_raw": 2344
+      },
+      "2023-03": {
+        "metrics": {
+          "post_count": 1896,
+          "total_score": 64149,
+          "avg_score": 33.8,
+          "total_comments": 14696,
+          "avg_comments": 7.8,
+          "avg_upvote_ratio": 0.926,
+          "top_post_title": "My Official Custom From Build a Bear Corporate! I won an auction at their 25th anniversary gala to create my own custom ",
+          "top_post_score": 1089
+        },
+        "post_count_raw": 1896
+      },
+      "2023-04": {
+        "metrics": {
+          "post_count": 1606,
+          "total_score": 71253,
+          "avg_score": 44.4,
+          "total_comments": 12465,
+          "avg_comments": 7.8,
+          "avg_upvote_ratio": 0.954,
+          "top_post_title": "Maybe a little cringe but I gave my guy top surgery scars :)\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f\ud83d\udc38",
+          "top_post_score": 1544
+        },
+        "post_count_raw": 1606
+      },
+      "2023-05": {
+        "metrics": {
+          "post_count": 1794,
+          "total_score": 94818,
+          "avg_score": 52.9,
+          "total_comments": 15776,
+          "avg_comments": 8.8,
+          "avg_upvote_ratio": 0.944,
+          "top_post_title": "Cabbage Patch Kids clothes fit regular size BABs if anyone was wondering!",
+          "top_post_score": 802
+        },
+        "post_count_raw": 1794
+      },
+      "2023-06": {
+        "metrics": {
+          "post_count": 2182,
+          "total_score": 115605,
+          "avg_score": 53.0,
+          "total_comments": 20194,
+          "avg_comments": 9.3,
+          "avg_upvote_ratio": 0.922,
+          "top_post_title": "They are literally girlfriends!!!",
+          "top_post_score": 1158
+        },
+        "post_count_raw": 2182
+      },
+      "2023-07": {
+        "metrics": {
+          "post_count": 2529,
+          "total_score": 130234,
+          "avg_score": 51.5,
+          "total_comments": 20739,
+          "avg_comments": 8.2,
+          "avg_upvote_ratio": 0.939,
+          "top_post_title": "Had these leaks sent to me :)",
+          "top_post_score": 1422
+        },
+        "post_count_raw": 2529
+      },
+      "2023-08": {
+        "metrics": {
+          "post_count": 2011,
+          "total_score": 84874,
+          "avg_score": 42.2,
+          "total_comments": 14414,
+          "avg_comments": 7.2,
+          "avg_upvote_ratio": 0.948,
+          "top_post_title": "pumpkin kitty!! \ud83c\udf83",
+          "top_post_score": 608
+        },
+        "post_count_raw": 2011
+      },
+      "2023-09": {
+        "metrics": {
+          "post_count": 2784,
+          "total_score": 103477,
+          "avg_score": 37.2,
+          "total_comments": 17725,
+          "avg_comments": 6.4,
+          "avg_upvote_ratio": 0.931,
+          "top_post_title": "pumpkin kitties. \ud83c\udf83 who here was able to snag one?",
+          "top_post_score": 869
+        },
+        "post_count_raw": 2784
+      },
+      "2023-10": {
+        "metrics": {
+          "post_count": 2090,
+          "total_score": 91786,
+          "avg_score": 43.9,
+          "total_comments": 14438,
+          "avg_comments": 6.9,
+          "avg_upvote_ratio": 0.95,
+          "top_post_title": "My bf and i broke up last week. I found out he\u2019s been cheating on me for over a month. We had made plans to make my firs",
+          "top_post_score": 680
+        },
+        "post_count_raw": 2090
+      },
+      "2023-11": {
+        "metrics": {
+          "post_count": 2176,
+          "total_score": 96823,
+          "avg_score": 44.5,
+          "total_comments": 15426,
+          "avg_comments": 7.1,
+          "avg_upvote_ratio": 0.941,
+          "top_post_title": "Dog attack fatality \ud83d\udc80\ud83d\ude2d",
+          "top_post_score": 680
+        },
+        "post_count_raw": 2176
+      },
+      "2023-12": {
+        "metrics": {
+          "post_count": 1683,
+          "total_score": 68793,
+          "avg_score": 40.9,
+          "total_comments": 11837,
+          "avg_comments": 7.0,
+          "avg_upvote_ratio": 0.957,
+          "top_post_title": "Build a Bear Autism Creature",
+          "top_post_score": 851
+        },
+        "post_count_raw": 1683
+      },
+      "2024-01": {
+        "metrics": {
+          "post_count": 2269,
+          "total_score": 83231,
+          "avg_score": 36.7,
+          "total_comments": 16253,
+          "avg_comments": 7.2,
+          "avg_upvote_ratio": 0.963,
+          "top_post_title": "Dr.Greenbean at your service! Chemo Round One: Fight!\ud83e\udd4a",
+          "top_post_score": 1011
+        },
+        "post_count_raw": 2269
+      },
+      "2024-02": {
+        "metrics": {
+          "post_count": 2101,
+          "total_score": 106432,
+          "avg_score": 50.7,
+          "total_comments": 17583,
+          "avg_comments": 8.4,
+          "avg_upvote_ratio": 0.955,
+          "top_post_title": "Was unstuffing a thrift find and\u2026.",
+          "top_post_score": 2063
+        },
+        "post_count_raw": 2101
+      },
+      "2024-03": {
+        "metrics": {
+          "post_count": 2173,
+          "total_score": 110681,
+          "avg_score": 50.9,
+          "total_comments": 4475,
+          "avg_comments": 2.1,
+          "avg_upvote_ratio": 0.996,
+          "top_post_title": "This Is Surprisingly Thoughtful",
+          "top_post_score": 1490
+        },
+        "post_count_raw": 2173
+      },
+      "2024-04": {
+        "metrics": {
+          "post_count": 1600,
+          "total_score": 98816,
+          "avg_score": 61.8,
+          "total_comments": 13522,
+          "avg_comments": 8.5,
+          "avg_upvote_ratio": 0.949,
+          "top_post_title": "visited a heritage store today \ud83d\ude2d",
+          "top_post_score": 1165
+        },
+        "post_count_raw": 1600
+      },
+      "2024-05": {
+        "metrics": {
+          "post_count": 1810,
+          "total_score": 103207,
+          "avg_score": 57.0,
+          "total_comments": 15179,
+          "avg_comments": 8.4,
+          "avg_upvote_ratio": 0.955,
+          "top_post_title": "I snuck my sister's BAB to her college graduation :)",
+          "top_post_score": 1563
+        },
+        "post_count_raw": 1810
+      },
+      "2024-06": {
+        "metrics": {
+          "post_count": 2025,
+          "total_score": 108403,
+          "avg_score": 53.5,
+          "total_comments": 17300,
+          "avg_comments": 8.5,
+          "avg_upvote_ratio": 0.953,
+          "top_post_title": "To everyone who managed to get Mothman this morning\u2026",
+          "top_post_score": 1453
+        },
+        "post_count_raw": 2025
+      },
+      "2024-07": {
+        "metrics": {
+          "post_count": 2398,
+          "total_score": 134361,
+          "avg_score": 56.0,
+          "total_comments": 19149,
+          "avg_comments": 8.0,
+          "avg_upvote_ratio": 0.963,
+          "top_post_title": "I got devastating medical news pls show me your babs",
+          "top_post_score": 1611
+        },
+        "post_count_raw": 2398
+      },
+      "2024-08": {
+        "metrics": {
+          "post_count": 3552,
+          "total_score": 197814,
+          "avg_score": 55.7,
+          "total_comments": 29687,
+          "avg_comments": 8.4,
+          "avg_upvote_ratio": 0.96,
+          "top_post_title": "Probably one of my best finds. \ud83d\udc08\ud83c\udf83",
+          "top_post_score": 1385
+        },
+        "post_count_raw": 3552
+      },
+      "2024-09": {
+        "metrics": {
+          "post_count": 2556,
+          "total_score": 177712,
+          "avg_score": 69.5,
+          "total_comments": 21839,
+          "avg_comments": 8.5,
+          "avg_upvote_ratio": 0.962,
+          "top_post_title": "Last day for our bear tub :(",
+          "top_post_score": 4426
+        },
+        "post_count_raw": 2556
+      },
+      "2024-10": {
+        "metrics": {
+          "post_count": 3446,
+          "total_score": 217906,
+          "avg_score": 63.2,
+          "total_comments": 26936,
+          "avg_comments": 7.8,
+          "avg_upvote_ratio": 0.952,
+          "top_post_title": "this is mcgriddle and I have a terrible confession",
+          "top_post_score": 2192
+        },
+        "post_count_raw": 3446
+      },
+      "2024-11": {
+        "metrics": {
+          "post_count": 2929,
+          "total_score": 184642,
+          "avg_score": 63.0,
+          "total_comments": 22543,
+          "avg_comments": 7.7,
+          "avg_upvote_ratio": 0.964,
+          "top_post_title": "Sherbet is offering hugs to anyone mourning the election results ",
+          "top_post_score": 3258
+        },
+        "post_count_raw": 2929
+      },
+      "2024-12": {
+        "metrics": {
+          "post_count": 2369,
+          "total_score": 139172,
+          "avg_score": 58.7,
+          "total_comments": 15851,
+          "avg_comments": 6.7,
+          "avg_upvote_ratio": 0.955,
+          "top_post_title": "My partner got me a custom Mocha and she couldn\u2019t be more perfect! \ud83e\udd0e\u2615\ufe0f\ud83c\udf38",
+          "top_post_score": 1117
+        },
+        "post_count_raw": 2369
+      },
+      "2025-01": {
+        "metrics": {
+          "post_count": 2837,
+          "total_score": 186998,
+          "avg_score": 65.9,
+          "total_comments": 21494,
+          "avg_comments": 7.6,
+          "avg_upvote_ratio": 0.955,
+          "top_post_title": "My boyfriend took me to get matching build a bears for mg 15th birthday!! ",
+          "top_post_score": 2485
+        },
+        "post_count_raw": 2837
+      },
+      "2025-02": {
+        "metrics": {
+          "post_count": 2478,
+          "total_score": 175073,
+          "avg_score": 70.7,
+          "total_comments": 20312,
+          "avg_comments": 8.2,
+          "avg_upvote_ratio": 0.957,
+          "top_post_title": "Made a cashier laugh at target",
+          "top_post_score": 4703
+        },
+        "post_count_raw": 2478
+      },
+      "2025-03": {
+        "metrics": {
+          "post_count": 2520,
+          "total_score": 171558,
+          "avg_score": 68.1,
+          "total_comments": 19438,
+          "avg_comments": 7.7,
+          "avg_upvote_ratio": 0.966,
+          "top_post_title": "SHUT UP!!!",
+          "top_post_score": 2141
+        },
+        "post_count_raw": 2520
+      },
+      "2025-04": {
+        "metrics": {
+          "post_count": 1958,
+          "total_score": 135836,
+          "avg_score": 69.4,
+          "total_comments": 17621,
+          "avg_comments": 9.0,
+          "avg_upvote_ratio": 0.959,
+          "top_post_title": "my boy is here but...",
+          "top_post_score": 2624
+        },
+        "post_count_raw": 1958
+      },
+      "2025-05": {
+        "metrics": {
+          "post_count": 2353,
+          "total_score": 174753,
+          "avg_score": 74.3,
+          "total_comments": 21221,
+          "avg_comments": 9.0,
+          "avg_upvote_ratio": 0.962,
+          "top_post_title": "Made a light-hearted meme for everyone who asks some variation of \"is it weird to bring my stuffed friend in public?\" \ud83d\ude0a\ud83d\udc9c",
+          "top_post_score": 3174
+        },
+        "post_count_raw": 2353
+      },
+      "2025-06": {
+        "metrics": {
+          "post_count": 1794,
+          "total_score": 143596,
+          "avg_score": 80.0,
+          "total_comments": 14778,
+          "avg_comments": 8.2,
+          "avg_upvote_ratio": 0.965,
+          "top_post_title": "I JUST FOUND THIS FOR 25 CENTS AT A YARD SALE \ud83d\ude2d",
+          "top_post_score": 3801
+        },
+        "post_count_raw": 1794
+      },
+      "2025-07": {
+        "metrics": {
+          "post_count": 2152,
+          "total_score": 163289,
+          "avg_score": 75.9,
+          "total_comments": 19319,
+          "avg_comments": 9.0,
+          "avg_upvote_ratio": 0.963,
+          "top_post_title": "lol another leak?? From lil ol me??",
+          "top_post_score": 1877
+        },
+        "post_count_raw": 2152
+      },
+      "2025-08": {
+        "metrics": {
+          "post_count": 3448,
+          "total_score": 240347,
+          "avg_score": 69.7,
+          "total_comments": 28499,
+          "avg_comments": 8.3,
+          "avg_upvote_ratio": 0.96,
+          "top_post_title": "Everyone meet Graham Cracker!!",
+          "top_post_score": 2848
+        },
+        "post_count_raw": 3448
+      },
+      "2025-09": {
+        "metrics": {
+          "post_count": 2533,
+          "total_score": 158858,
+          "avg_score": 62.7,
+          "total_comments": 21115,
+          "avg_comments": 8.3,
+          "avg_upvote_ratio": 0.942,
+          "top_post_title": "a birthday build a bear trip in 2006!",
+          "top_post_score": 2328
+        },
+        "post_count_raw": 2533
+      },
+      "2025-10": {
+        "metrics": {
+          "post_count": 2203,
+          "total_score": 173959,
+          "avg_score": 79.0,
+          "total_comments": 18726,
+          "avg_comments": 8.5,
+          "avg_upvote_ratio": 0.957,
+          "top_post_title": "So Happy They Got It Wrong!",
+          "top_post_score": 5828
+        },
+        "post_count_raw": 2203
+      },
+      "2025-11": {
+        "metrics": {
+          "post_count": 2153,
+          "total_score": 135630,
+          "avg_score": 63.0,
+          "total_comments": 19575,
+          "avg_comments": 9.1,
+          "avg_upvote_ratio": 0.95,
+          "top_post_title": "OKAY ITS HAPPENING EVERYBODY STAY CALM",
+          "top_post_score": 2056
+        },
+        "post_count_raw": 2153
+      },
+      "2025-12": {
+        "metrics": {
+          "post_count": 1799,
+          "total_score": 93739,
+          "avg_score": 52.1,
+          "total_comments": 13753,
+          "avg_comments": 7.6,
+          "avg_upvote_ratio": 0.957,
+          "top_post_title": "Build a Bear unionizing!",
+          "top_post_score": 1345
+        },
+        "post_count_raw": 1799
+      },
+      "2026-01": {
+        "metrics": {
+          "post_count": 2001,
+          "total_score": 119676,
+          "avg_score": 59.8,
+          "total_comments": 15467,
+          "avg_comments": 7.7,
+          "avg_upvote_ratio": 0.964,
+          "top_post_title": "Custom Strawberry Pochacco!\ud83c\udf53",
+          "top_post_score": 1480
+        },
+        "post_count_raw": 2001
+      },
+      "2026-02": {
+        "metrics": {
+          "post_count": 1478,
+          "total_score": 99468,
+          "avg_score": 67.3,
+          "total_comments": 11302,
+          "avg_comments": 7.6,
+          "avg_upvote_ratio": 0.972,
+          "top_post_title": "EEEEEK",
+          "top_post_score": 1472
+        },
+        "post_count_raw": 1478
+      },
+      "2026-03": {
+        "metrics": {
+          "post_count": 1759,
+          "total_score": 121639,
+          "avg_score": 69.2,
+          "total_comments": 12358,
+          "avg_comments": 7.0,
+          "avg_upvote_ratio": 0.969,
+          "top_post_title": "Yes, I am a man. Yes, I do turn 30 this year. No, I don't regret a thing.",
+          "top_post_score": 2787
+        },
+        "post_count_raw": 1759
+      }
+    },
+    "squishmallows": {
+      "2022-01": {
+        "metrics": {
+          "post_count": 144,
+          "total_score": 1518,
+          "avg_score": 10.5,
+          "total_comments": 478,
+          "avg_comments": 3.3,
+          "avg_upvote_ratio": 0.907,
+          "top_post_title": "My 8 year old started collecting Squishmallows right before Halloween. She wanted me to share her collection. We are mis",
+          "top_post_score": 69
+        },
+        "post_count_raw": 144
+      },
+      "2022-02": {
+        "metrics": {
+          "post_count": 173,
+          "total_score": 1786,
+          "avg_score": 10.3,
+          "total_comments": 606,
+          "avg_comments": 3.5,
+          "avg_upvote_ratio": 0.929,
+          "top_post_title": "I think it\u2019s safe to say I\u2019ve had a lucky week",
+          "top_post_score": 88
+        },
+        "post_count_raw": 173
+      },
+      "2022-03": {
+        "metrics": {
+          "post_count": 295,
+          "total_score": 3192,
+          "avg_score": 10.8,
+          "total_comments": 1207,
+          "avg_comments": 4.1,
+          "avg_upvote_ratio": 0.94,
+          "top_post_title": "but i still love them </3",
+          "top_post_score": 100
+        },
+        "post_count_raw": 295
+      },
+      "2022-04": {
+        "metrics": {
+          "post_count": 276,
+          "total_score": 2858,
+          "avg_score": 10.4,
+          "total_comments": 743,
+          "avg_comments": 2.7,
+          "avg_upvote_ratio": 0.94,
+          "top_post_title": "does anyone else\u2019s bf do this?",
+          "top_post_score": 92
+        },
+        "post_count_raw": 276
+      },
+      "2022-05": {
+        "metrics": {
+          "post_count": 290,
+          "total_score": 3953,
+          "avg_score": 13.6,
+          "total_comments": 1089,
+          "avg_comments": 3.8,
+          "avg_upvote_ratio": 0.925,
+          "top_post_title": "My whole collection\ud83d\udc95\ud83e\udd79",
+          "top_post_score": 108
+        },
+        "post_count_raw": 290
+      },
+      "2022-06": {
+        "metrics": {
+          "post_count": 282,
+          "total_score": 2862,
+          "avg_score": 10.1,
+          "total_comments": 1222,
+          "avg_comments": 4.3,
+          "avg_upvote_ratio": 0.906,
+          "top_post_title": "I made a custom Mothman squish and I love him so much \ud83e\udd72 I can make a few more if anyone would like to buy one! He\u2019s made",
+          "top_post_score": 115
+        },
+        "post_count_raw": 282
+      },
+      "2022-07": {
+        "metrics": {
+          "post_count": 303,
+          "total_score": 2708,
+          "avg_score": 8.9,
+          "total_comments": 1502,
+          "avg_comments": 5.0,
+          "avg_upvote_ratio": 0.887,
+          "top_post_title": "i believe in pink squish supremacy (\u2267\u25e1\u2266) \u2661",
+          "top_post_score": 99
+        },
+        "post_count_raw": 303
+      },
+      "2022-08": {
+        "metrics": {
+          "post_count": 328,
+          "total_score": 3002,
+          "avg_score": 9.2,
+          "total_comments": 1329,
+          "avg_comments": 4.1,
+          "avg_upvote_ratio": 0.902,
+          "top_post_title": "The Disney Princess squishmallows really be lookin like no neck Ed \ud83d\ude05\ud83d\ude05\ud83d\ude05\ud83d\ude05\ud83d\ude05",
+          "top_post_score": 101
+        },
+        "post_count_raw": 328
+      },
+      "2022-09": {
+        "metrics": {
+          "post_count": 261,
+          "total_score": 3332,
+          "avg_score": 12.8,
+          "total_comments": 1113,
+          "avg_comments": 4.3,
+          "avg_upvote_ratio": 0.876,
+          "top_post_title": "I finally got lucky!! \ud83d\ude2d\u2764\ufe0f\ud83d\udc9e",
+          "top_post_score": 124
+        },
+        "post_count_raw": 261
+      },
+      "2022-10": {
+        "metrics": {
+          "post_count": 274,
+          "total_score": 2701,
+          "avg_score": 9.9,
+          "total_comments": 971,
+          "avg_comments": 3.5,
+          "avg_upvote_ratio": 0.875,
+          "top_post_title": "Just missing two (4\u201d capsule and 12\u201d OG). OTTO ARMY!!!",
+          "top_post_score": 80
+        },
+        "post_count_raw": 274
+      },
+      "2022-11": {
+        "metrics": {
+          "post_count": 244,
+          "total_score": 2287,
+          "avg_score": 9.4,
+          "total_comments": 717,
+          "avg_comments": 2.9,
+          "avg_upvote_ratio": 0.854,
+          "top_post_title": "Getting ready for Christmas \ud83c\udf84",
+          "top_post_score": 101
+        },
+        "post_count_raw": 244
+      },
+      "2022-12": {
+        "metrics": {
+          "post_count": 186,
+          "total_score": 2565,
+          "avg_score": 13.8,
+          "total_comments": 642,
+          "avg_comments": 3.5,
+          "avg_upvote_ratio": 0.871,
+          "top_post_title": "My new TV setup",
+          "top_post_score": 84
+        },
+        "post_count_raw": 186
+      },
+      "2023-01": {
+        "metrics": {
+          "post_count": 282,
+          "total_score": 3191,
+          "avg_score": 11.3,
+          "total_comments": 885,
+          "avg_comments": 3.1,
+          "avg_upvote_ratio": 0.916,
+          "top_post_title": "My office is now finished and I\u2019m in love!",
+          "top_post_score": 91
+        },
+        "post_count_raw": 282
+      },
+      "2023-02": {
+        "metrics": {
+          "post_count": 255,
+          "total_score": 3283,
+          "avg_score": 12.9,
+          "total_comments": 997,
+          "avg_comments": 3.9,
+          "avg_upvote_ratio": 0.914,
+          "top_post_title": "My Squishmallow Birthday Cake!",
+          "top_post_score": 121
+        },
+        "post_count_raw": 255
+      },
+      "2023-03": {
+        "metrics": {
+          "post_count": 234,
+          "total_score": 2472,
+          "avg_score": 10.6,
+          "total_comments": 730,
+          "avg_comments": 3.1,
+          "avg_upvote_ratio": 0.911,
+          "top_post_title": "I got the dumb gummy bear\ud83d\ude2d\ud83d\udc9a",
+          "top_post_score": 105
+        },
+        "post_count_raw": 234
+      },
+      "2023-04": {
+        "metrics": {
+          "post_count": 177,
+          "total_score": 2097,
+          "avg_score": 11.8,
+          "total_comments": 718,
+          "avg_comments": 4.1,
+          "avg_upvote_ratio": 0.934,
+          "top_post_title": "We cannot escape, we cannot come out... Mumma",
+          "top_post_score": 99
+        },
+        "post_count_raw": 177
+      },
+      "2023-05": {
+        "metrics": {
+          "post_count": 223,
+          "total_score": 2140,
+          "avg_score": 9.6,
+          "total_comments": 753,
+          "avg_comments": 3.4,
+          "avg_upvote_ratio": 0.965,
+          "top_post_title": "i got all of these squish for $40. Was it worth it?",
+          "top_post_score": 163
+        },
+        "post_count_raw": 223
+      },
+      "2023-06": {
+        "metrics": {
+          "post_count": 219,
+          "total_score": 1960,
+          "avg_score": 8.9,
+          "total_comments": 672,
+          "avg_comments": 3.1,
+          "avg_upvote_ratio": 0.938,
+          "top_post_title": "Is this too much to ask for? Raichu Squishmallow Edits",
+          "top_post_score": 121
+        },
+        "post_count_raw": 219
+      },
+      "2023-07": {
+        "metrics": {
+          "post_count": 188,
+          "total_score": 2269,
+          "avg_score": 12.1,
+          "total_comments": 697,
+          "avg_comments": 3.7,
+          "avg_upvote_ratio": 0.905,
+          "top_post_title": "Should I sell these?",
+          "top_post_score": 174
+        },
+        "post_count_raw": 188
+      },
+      "2023-08": {
+        "metrics": {
+          "post_count": 218,
+          "total_score": 1709,
+          "avg_score": 7.8,
+          "total_comments": 684,
+          "avg_comments": 3.1,
+          "avg_upvote_ratio": 0.887,
+          "top_post_title": "Did I, a thirty one year old woman, drive an hour round trip for a Bluey Hugmee and then celebrate with mac and cheese?\u2026",
+          "top_post_score": 139
+        },
+        "post_count_raw": 218
+      },
+      "2023-09": {
+        "metrics": {
+          "post_count": 222,
+          "total_score": 1680,
+          "avg_score": 7.6,
+          "total_comments": 523,
+          "avg_comments": 2.4,
+          "avg_upvote_ratio": 0.922,
+          "top_post_title": "I ordered 8 and got 8 of the same one \ud83d\ude22",
+          "top_post_score": 67
+        },
+        "post_count_raw": 222
+      },
+      "2023-10": {
+        "metrics": {
+          "post_count": 214,
+          "total_score": 3967,
+          "avg_score": 18.5,
+          "total_comments": 1089,
+          "avg_comments": 5.1,
+          "avg_upvote_ratio": 0.876,
+          "top_post_title": "My store has been stocked like this for a week!! Does no one want these babies?! :(",
+          "top_post_score": 1836
+        },
+        "post_count_raw": 214
+      },
+      "2023-11": {
+        "metrics": {
+          "post_count": 171,
+          "total_score": 2045,
+          "avg_score": 12.0,
+          "total_comments": 951,
+          "avg_comments": 5.6,
+          "avg_upvote_ratio": 0.82,
+          "top_post_title": "This is sad",
+          "top_post_score": 209
+        },
+        "post_count_raw": 171
+      },
+      "2023-12": {
+        "metrics": {
+          "post_count": 198,
+          "total_score": 2408,
+          "avg_score": 12.2,
+          "total_comments": 453,
+          "avg_comments": 2.3,
+          "avg_upvote_ratio": 0.916,
+          "top_post_title": "Found this guy today!",
+          "top_post_score": 137
+        },
+        "post_count_raw": 198
+      },
+      "2024-01": {
+        "metrics": {
+          "post_count": 295,
+          "total_score": 6544,
+          "avg_score": 22.2,
+          "total_comments": 981,
+          "avg_comments": 3.3,
+          "avg_upvote_ratio": 0.872,
+          "top_post_title": "what do i do? my friend left this here on purpose.",
+          "top_post_score": 2181
+        },
+        "post_count_raw": 295
+      },
+      "2024-02": {
+        "metrics": {
+          "post_count": 222,
+          "total_score": 5076,
+          "avg_score": 22.9,
+          "total_comments": 822,
+          "avg_comments": 3.7,
+          "avg_upvote_ratio": 0.933,
+          "top_post_title": "I officially hit 100 Squish \ud83c\udf89",
+          "top_post_score": 210
+        },
+        "post_count_raw": 222
+      },
+      "2024-03": {
+        "metrics": {
+          "post_count": 231,
+          "total_score": 2115,
+          "avg_score": 9.2,
+          "total_comments": 429,
+          "avg_comments": 1.9,
+          "avg_upvote_ratio": 0.996,
+          "top_post_title": "Any suggestions for my purples? Preferably 5\u201d.",
+          "top_post_score": 67
+        },
+        "post_count_raw": 231
+      },
+      "2024-04": {
+        "metrics": {
+          "post_count": 138,
+          "total_score": 1910,
+          "avg_score": 13.8,
+          "total_comments": 394,
+          "avg_comments": 2.9,
+          "avg_upvote_ratio": 0.946,
+          "top_post_title": "\u203c\ufe0fGirlfriend is parting ways with prized cat collection\u203c\ufe0f",
+          "top_post_score": 110
+        },
+        "post_count_raw": 138
+      },
+      "2024-05": {
+        "metrics": {
+          "post_count": 154,
+          "total_score": 3040,
+          "avg_score": 19.7,
+          "total_comments": 536,
+          "avg_comments": 3.5,
+          "avg_upvote_ratio": 0.95,
+          "top_post_title": "What should her name be? Got her as a gift",
+          "top_post_score": 538
+        },
+        "post_count_raw": 154
+      },
+      "2024-06": {
+        "metrics": {
+          "post_count": 215,
+          "total_score": 2301,
+          "avg_score": 10.7,
+          "total_comments": 522,
+          "avg_comments": 2.4,
+          "avg_upvote_ratio": 0.908,
+          "top_post_title": "Has anyone ever seen this one before? They don't even have a name!",
+          "top_post_score": 132
+        },
+        "post_count_raw": 215
+      },
+      "2024-07": {
+        "metrics": {
+          "post_count": 107,
+          "total_score": 2180,
+          "avg_score": 20.4,
+          "total_comments": 391,
+          "avg_comments": 3.7,
+          "avg_upvote_ratio": 0.954,
+          "top_post_title": "What are people's thoughts on the aliens, I wasn't sure to start with but she's really cute ",
+          "top_post_score": 149
+        },
+        "post_count_raw": 107
+      },
+      "2024-08": {
+        "metrics": {
+          "post_count": 186,
+          "total_score": 5985,
+          "avg_score": 32.2,
+          "total_comments": 874,
+          "avg_comments": 4.7,
+          "avg_upvote_ratio": 0.962,
+          "top_post_title": "I found the cactus cat today and she's so cute ",
+          "top_post_score": 482
+        },
+        "post_count_raw": 186
+      },
+      "2024-09": {
+        "metrics": {
+          "post_count": 103,
+          "total_score": 4703,
+          "avg_score": 45.7,
+          "total_comments": 438,
+          "avg_comments": 4.3,
+          "avg_upvote_ratio": 0.971,
+          "top_post_title": "Husband and I\u2019s collection ",
+          "top_post_score": 371
+        },
+        "post_count_raw": 103
+      },
+      "2024-10": {
+        "metrics": {
+          "post_count": 123,
+          "total_score": 5936,
+          "avg_score": 48.3,
+          "total_comments": 611,
+          "avg_comments": 5.0,
+          "avg_upvote_ratio": 0.971,
+          "top_post_title": "\u2728My collection\u2728\ud83d\udd2e",
+          "top_post_score": 350
+        },
+        "post_count_raw": 123
+      },
+      "2024-11": {
+        "metrics": {
+          "post_count": 100,
+          "total_score": 4196,
+          "avg_score": 42.0,
+          "total_comments": 289,
+          "avg_comments": 2.9,
+          "avg_upvote_ratio": 0.977,
+          "top_post_title": "I'm not big on Christmas squish, but I had to have \u2728\ufe0f HER \u2728\ufe0f\ud83d\udc95",
+          "top_post_score": 330
+        },
+        "post_count_raw": 100
+      },
+      "2024-12": {
+        "metrics": {
+          "post_count": 98,
+          "total_score": 3674,
+          "avg_score": 37.5,
+          "total_comments": 221,
+          "avg_comments": 2.3,
+          "avg_upvote_ratio": 0.96,
+          "top_post_title": "Finally got all of my squish unpacked at my new house!",
+          "top_post_score": 407
+        },
+        "post_count_raw": 98
+      },
+      "2025-01": {
+        "metrics": {
+          "post_count": 95,
+          "total_score": 3523,
+          "avg_score": 37.1,
+          "total_comments": 247,
+          "avg_comments": 2.6,
+          "avg_upvote_ratio": 0.964,
+          "top_post_title": "Hello! I don\u2019t know a lot about Squishmallows but I found this guy at my local Goodwill and noticed this \u2018First to Marke",
+          "top_post_score": 227
+        },
+        "post_count_raw": 95
+      },
+      "2025-02": {
+        "metrics": {
+          "post_count": 73,
+          "total_score": 3624,
+          "avg_score": 49.6,
+          "total_comments": 304,
+          "avg_comments": 4.2,
+          "avg_upvote_ratio": 0.974,
+          "top_post_title": "For Valentine's this year my fianc\u00e9 got me my dream Clefairy \ud83d\udda4\ud83d\udc9c",
+          "top_post_score": 395
+        },
+        "post_count_raw": 73
+      },
+      "2025-03": {
+        "metrics": {
+          "post_count": 71,
+          "total_score": 3953,
+          "avg_score": 55.7,
+          "total_comments": 228,
+          "avg_comments": 3.2,
+          "avg_upvote_ratio": 0.977,
+          "top_post_title": "Immediately coming tf home with me\ud83d\udc31",
+          "top_post_score": 773
+        },
+        "post_count_raw": 71
+      },
+      "2025-04": {
+        "metrics": {
+          "post_count": 41,
+          "total_score": 2200,
+          "avg_score": 53.7,
+          "total_comments": 123,
+          "avg_comments": 3.0,
+          "avg_upvote_ratio": 0.962,
+          "top_post_title": "I finally got all sizes of my favorite girl \ud83e\ude77\ud83e\udd7a",
+          "top_post_score": 533
+        },
+        "post_count_raw": 41
+      },
+      "2025-05": {
+        "metrics": {
+          "post_count": 48,
+          "total_score": 1792,
+          "avg_score": 37.3,
+          "total_comments": 92,
+          "avg_comments": 1.9,
+          "avg_upvote_ratio": 0.956,
+          "top_post_title": "I scored Noodles off marketplace for $5 \ud83e\udd70\ud83d\udc9b",
+          "top_post_score": 146
+        },
+        "post_count_raw": 48
+      },
+      "2025-06": {
+        "metrics": {
+          "post_count": 36,
+          "total_score": 1071,
+          "avg_score": 29.8,
+          "total_comments": 95,
+          "avg_comments": 2.6,
+          "avg_upvote_ratio": 0.963,
+          "top_post_title": "Sooo, this is a real thing...",
+          "top_post_score": 303
+        },
+        "post_count_raw": 36
+      },
+      "2025-07": {
+        "metrics": {
+          "post_count": 35,
+          "total_score": 666,
+          "avg_score": 19.0,
+          "total_comments": 69,
+          "avg_comments": 2.0,
+          "avg_upvote_ratio": 0.949,
+          "top_post_title": "scored this baby at Goodwill for only five dollars",
+          "top_post_score": 111
+        },
+        "post_count_raw": 35
+      },
+      "2025-08": {
+        "metrics": {
+          "post_count": 41,
+          "total_score": 694,
+          "avg_score": 16.9,
+          "total_comments": 58,
+          "avg_comments": 1.4,
+          "avg_upvote_ratio": 0.96,
+          "top_post_title": "New shelf for SOME of my cat squishes!",
+          "top_post_score": 113
+        },
+        "post_count_raw": 41
+      },
+      "2025-09": {
+        "metrics": {
+          "post_count": 56,
+          "total_score": 1123,
+          "avg_score": 20.1,
+          "total_comments": 115,
+          "avg_comments": 2.1,
+          "avg_upvote_ratio": 0.938,
+          "top_post_title": "Birthday countdown!",
+          "top_post_score": 105
+        },
+        "post_count_raw": 56
+      },
+      "2025-10": {
+        "metrics": {
+          "post_count": 48,
+          "total_score": 956,
+          "avg_score": 19.9,
+          "total_comments": 63,
+          "avg_comments": 1.3,
+          "avg_upvote_ratio": 0.937,
+          "top_post_title": "selling these to pay for my bill so i can get my  cats ashes",
+          "top_post_score": 189
+        },
+        "post_count_raw": 48
+      },
+      "2025-11": {
+        "metrics": {
+          "post_count": 39,
+          "total_score": 1654,
+          "avg_score": 42.4,
+          "total_comments": 163,
+          "avg_comments": 4.2,
+          "avg_upvote_ratio": 0.92,
+          "top_post_title": "Who do I get",
+          "top_post_score": 313
+        },
+        "post_count_raw": 39
+      },
+      "2025-12": {
+        "metrics": {
+          "post_count": 44,
+          "total_score": 1114,
+          "avg_score": 25.3,
+          "total_comments": 71,
+          "avg_comments": 1.6,
+          "avg_upvote_ratio": 0.968,
+          "top_post_title": "My first Squishmallow that I got last year for Christmas",
+          "top_post_score": 117
+        },
+        "post_count_raw": 44
+      },
+      "2026-01": {
+        "metrics": {
+          "post_count": 35,
+          "total_score": 1121,
+          "avg_score": 32.0,
+          "total_comments": 63,
+          "avg_comments": 1.8,
+          "avg_upvote_ratio": 0.965,
+          "top_post_title": "New Year, new relatives?\ud83e\udd14",
+          "top_post_score": 148
+        },
+        "post_count_raw": 35
+      },
+      "2026-02": {
+        "metrics": {
+          "post_count": 55,
+          "total_score": 1652,
+          "avg_score": 30.0,
+          "total_comments": 142,
+          "avg_comments": 2.6,
+          "avg_upvote_ratio": 0.967,
+          "top_post_title": "My Junie/Banana collection \ud83c\udf4c\ud83d\udc9b",
+          "top_post_score": 412
+        },
+        "post_count_raw": 55
+      },
+      "2026-03": {
+        "metrics": {
+          "post_count": 28,
+          "total_score": 325,
+          "avg_score": 11.6,
+          "total_comments": 40,
+          "avg_comments": 1.4,
+          "avg_upvote_ratio": 0.952,
+          "top_post_title": "A couple weeks late but I now have Caparinne and Cupid \ud83d\udc98\ud83d\udc95",
+          "top_post_score": 43
+        },
+        "post_count_raw": 28
+      }
+    },
+    "stuffedanimals": {
+      "2022-01": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2022-02": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2022-03": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2022-04": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2022-05": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2022-06": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2022-07": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2022-08": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2022-09": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2022-10": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2022-11": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2022-12": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-01": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-02": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-03": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-04": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-05": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-06": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-07": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-08": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-09": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-10": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-11": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2023-12": {
+        "metrics": {
+          "post_count": 0,
+          "total_score": 0,
+          "avg_score": 0,
+          "total_comments": 0,
+          "avg_comments": 0,
+          "avg_upvote_ratio": 0,
+          "top_post_title": "",
+          "top_post_score": 0
+        },
+        "post_count_raw": 0
+      },
+      "2024-01": {
+        "metrics": {
+          "post_count": 99,
+          "total_score": 750,
+          "avg_score": 7.6,
+          "total_comments": 167,
+          "avg_comments": 1.7,
+          "avg_upvote_ratio": 0.95,
+          "top_post_title": "Look What I Found At My Ross!",
+          "top_post_score": 45
+        },
+        "post_count_raw": 99
+      },
+      "2024-02": {
+        "metrics": {
+          "post_count": 116,
+          "total_score": 1414,
+          "avg_score": 12.2,
+          "total_comments": 357,
+          "avg_comments": 3.1,
+          "avg_upvote_ratio": 0.937,
+          "top_post_title": "My collection!!",
+          "top_post_score": 46
+        },
+        "post_count_raw": 116
+      },
+      "2024-03": {
+        "metrics": {
+          "post_count": 122,
+          "total_score": 1084,
+          "avg_score": 8.9,
+          "total_comments": 216,
+          "avg_comments": 1.8,
+          "avg_upvote_ratio": 0.994,
+          "top_post_title": "Day 7 of showing all my FAVORITE stuffed animals!!!!",
+          "top_post_score": 35
+        },
+        "post_count_raw": 122
+      },
+      "2024-04": {
+        "metrics": {
+          "post_count": 91,
+          "total_score": 904,
+          "avg_score": 9.9,
+          "total_comments": 199,
+          "avg_comments": 2.2,
+          "avg_upvote_ratio": 0.963,
+          "top_post_title": "Help me name this dynamic duo! ",
+          "top_post_score": 37
+        },
+        "post_count_raw": 91
+      },
+      "2024-05": {
+        "metrics": {
+          "post_count": 95,
+          "total_score": 800,
+          "avg_score": 8.4,
+          "total_comments": 233,
+          "avg_comments": 2.5,
+          "avg_upvote_ratio": 0.95,
+          "top_post_title": "could anyone please help me find this stuffed chicken?? I really want to buy it",
+          "top_post_score": 34
+        },
+        "post_count_raw": 95
+      },
+      "2024-06": {
+        "metrics": {
+          "post_count": 153,
+          "total_score": 1813,
+          "avg_score": 11.8,
+          "total_comments": 605,
+          "avg_comments": 4.0,
+          "avg_upvote_ratio": 0.943,
+          "top_post_title": "A striped hyena created by me",
+          "top_post_score": 223
+        },
+        "post_count_raw": 153
+      },
+      "2024-07": {
+        "metrics": {
+          "post_count": 131,
+          "total_score": 1713,
+          "avg_score": 13.1,
+          "total_comments": 428,
+          "avg_comments": 3.3,
+          "avg_upvote_ratio": 0.961,
+          "top_post_title": "Look at all these cute plushies at my local toy store! Which one would you pick to take home? And what would you name th",
+          "top_post_score": 62
+        },
+        "post_count_raw": 131
+      },
+      "2024-08": {
+        "metrics": {
+          "post_count": 159,
+          "total_score": 1861,
+          "avg_score": 11.7,
+          "total_comments": 505,
+          "avg_comments": 3.2,
+          "avg_upvote_ratio": 0.967,
+          "top_post_title": "Can I make my boy fluffy again?",
+          "top_post_score": 66
+        },
+        "post_count_raw": 159
+      },
+      "2024-09": {
+        "metrics": {
+          "post_count": 153,
+          "total_score": 2539,
+          "avg_score": 16.6,
+          "total_comments": 496,
+          "avg_comments": 3.2,
+          "avg_upvote_ratio": 0.966,
+          "top_post_title": "I got a new friend and I need a name for him!",
+          "top_post_score": 115
+        },
+        "post_count_raw": 153
+      },
+      "2024-10": {
+        "metrics": {
+          "post_count": 187,
+          "total_score": 4012,
+          "avg_score": 21.5,
+          "total_comments": 885,
+          "avg_comments": 4.7,
+          "avg_upvote_ratio": 0.968,
+          "top_post_title": "How to get spray paint off stuffed animal?",
+          "top_post_score": 454
+        },
+        "post_count_raw": 187
+      },
+      "2024-11": {
+        "metrics": {
+          "post_count": 193,
+          "total_score": 3355,
+          "avg_score": 17.4,
+          "total_comments": 576,
+          "avg_comments": 3.0,
+          "avg_upvote_ratio": 0.963,
+          "top_post_title": "My psychiatrist said I could keep this guy what do I name him ",
+          "top_post_score": 221
+        },
+        "post_count_raw": 193
+      },
+      "2024-12": {
+        "metrics": {
+          "post_count": 287,
+          "total_score": 8983,
+          "avg_score": 31.3,
+          "total_comments": 1000,
+          "avg_comments": 3.5,
+          "avg_upvote_ratio": 0.969,
+          "top_post_title": "I need help, trying to find my childhood stuffed animal.",
+          "top_post_score": 564
+        },
+        "post_count_raw": 287
+      },
+      "2025-01": {
+        "metrics": {
+          "post_count": 286,
+          "total_score": 5340,
+          "avg_score": 18.7,
+          "total_comments": 796,
+          "avg_comments": 2.8,
+          "avg_upvote_ratio": 0.956,
+          "top_post_title": "Made a lil buddy and just wanted to show him to you!",
+          "top_post_score": 158
+        },
+        "post_count_raw": 286
+      },
+      "2025-02": {
+        "metrics": {
+          "post_count": 309,
+          "total_score": 8462,
+          "avg_score": 27.4,
+          "total_comments": 1814,
+          "avg_comments": 5.9,
+          "avg_upvote_ratio": 0.96,
+          "top_post_title": "For Christmas this year, I got the men in my life their childhood stuffies",
+          "top_post_score": 502
+        },
+        "post_count_raw": 309
+      },
+      "2025-03": {
+        "metrics": {
+          "post_count": 338,
+          "total_score": 8755,
+          "avg_score": 25.9,
+          "total_comments": 1793,
+          "avg_comments": 5.3,
+          "avg_upvote_ratio": 0.961,
+          "top_post_title": "Just sorted my stuffed animals into new shelf",
+          "top_post_score": 569
+        },
+        "post_count_raw": 338
+      },
+      "2025-04": {
+        "metrics": {
+          "post_count": 342,
+          "total_score": 11882,
+          "avg_score": 34.7,
+          "total_comments": 2455,
+          "avg_comments": 7.2,
+          "avg_upvote_ratio": 0.954,
+          "top_post_title": "please help me find my best friend",
+          "top_post_score": 1188
+        },
+        "post_count_raw": 342
+      },
+      "2025-05": {
+        "metrics": {
+          "post_count": 559,
+          "total_score": 36992,
+          "avg_score": 66.2,
+          "total_comments": 4322,
+          "avg_comments": 7.7,
+          "avg_upvote_ratio": 0.957,
+          "top_post_title": "Adopted our daughter in 2010 and this was the only thing she had",
+          "top_post_score": 8537
+        },
+        "post_count_raw": 559
+      },
+      "2025-06": {
+        "metrics": {
+          "post_count": 521,
+          "total_score": 23380,
+          "avg_score": 44.9,
+          "total_comments": 2694,
+          "avg_comments": 5.2,
+          "avg_upvote_ratio": 0.952,
+          "top_post_title": "fell in love at a gas station",
+          "top_post_score": 1093
+        },
+        "post_count_raw": 521
+      },
+      "2025-07": {
+        "metrics": {
+          "post_count": 419,
+          "total_score": 8646,
+          "avg_score": 20.6,
+          "total_comments": 1573,
+          "avg_comments": 3.8,
+          "avg_upvote_ratio": 0.951,
+          "top_post_title": "Need help identifying a plush I found at the thrift",
+          "top_post_score": 279
+        },
+        "post_count_raw": 419
+      },
+      "2025-08": {
+        "metrics": {
+          "post_count": 472,
+          "total_score": 11032,
+          "avg_score": 23.4,
+          "total_comments": 2138,
+          "avg_comments": 4.5,
+          "avg_upvote_ratio": 0.952,
+          "top_post_title": "To be loved is to be changed - show off your well-loved friends in the comments \ud83e\udd0d",
+          "top_post_score": 667
+        },
+        "post_count_raw": 472
+      },
+      "2025-09": {
+        "metrics": {
+          "post_count": 427,
+          "total_score": 11810,
+          "avg_score": 27.7,
+          "total_comments": 1887,
+          "avg_comments": 4.4,
+          "avg_upvote_ratio": 0.943,
+          "top_post_title": "Please help me find this? My child loves it but it belongs to the library.",
+          "top_post_score": 676
+        },
+        "post_count_raw": 427
+      },
+      "2025-10": {
+        "metrics": {
+          "post_count": 416,
+          "total_score": 9331,
+          "avg_score": 22.4,
+          "total_comments": 1288,
+          "avg_comments": 3.1,
+          "avg_upvote_ratio": 0.955,
+          "top_post_title": "I found this little guy at the grocery tonight and just couldn\u2019t leave him behind \ud83e\udd79",
+          "top_post_score": 436
+        },
+        "post_count_raw": 416
+      },
+      "2025-11": {
+        "metrics": {
+          "post_count": 432,
+          "total_score": 19196,
+          "avg_score": 44.4,
+          "total_comments": 1946,
+          "avg_comments": 4.5,
+          "avg_upvote_ratio": 0.948,
+          "top_post_title": "My grandma said \u201cI don\u2019t understand why they\u2019d make a demon toy\u201d",
+          "top_post_score": 2397
+        },
+        "post_count_raw": 432
+      },
+      "2025-12": {
+        "metrics": {
+          "post_count": 496,
+          "total_score": 16438,
+          "avg_score": 33.1,
+          "total_comments": 2713,
+          "avg_comments": 5.5,
+          "avg_upvote_ratio": 0.964,
+          "top_post_title": ":) you will appreciate my Bear. Found him sleeping in the Goodwill.",
+          "top_post_score": 1026
+        },
+        "post_count_raw": 496
+      },
+      "2026-01": {
+        "metrics": {
+          "post_count": 525,
+          "total_score": 19583,
+          "avg_score": 37.3,
+          "total_comments": 2606,
+          "avg_comments": 5.0,
+          "avg_upvote_ratio": 0.967,
+          "top_post_title": "Made a 6ft Penguin Plushie !! How is it ?",
+          "top_post_score": 1360
+        },
+        "post_count_raw": 525
+      },
+      "2026-02": {
+        "metrics": {
+          "post_count": 497,
+          "total_score": 14629,
+          "avg_score": 29.4,
+          "total_comments": 2114,
+          "avg_comments": 4.3,
+          "avg_upvote_ratio": 0.96,
+          "top_post_title": "Rest in Peace, Benny.",
+          "top_post_score": 1264
+        },
+        "post_count_raw": 497
+      },
+      "2026-03": {
+        "metrics": {
+          "post_count": 480,
+          "total_score": 16424,
+          "avg_score": 34.2,
+          "total_comments": 2278,
+          "avg_comments": 4.7,
+          "avg_upvote_ratio": 0.946,
+          "top_post_title": "please help me find my lamb",
+          "top_post_score": 2269
+        },
+        "post_count_raw": 480
+      }
+    }
+  }
+}
