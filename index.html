@@ -886,15 +886,14 @@ tr:hover td { background:var(--surface2); }
 
   <!-- YouTube YoY chart -->
   <div class="chart-card" style="margin-top:16px">
-    <h3>Build-A-Bear YouTube — Year-over-Year Monthly Views · 2023–2026</h3>
+    <h3>Build-A-Bear YouTube — Year-over-Year View Comparison · Jan–Dec · 2023–2026</h3>
     <div id="yoyYTDesc" style="font-size:10px;color:var(--muted);margin-bottom:10px;line-height:1.5;border-left:2px solid var(--gold);padding-left:8px"></div>
     <svg id="yoyYTChart" class="chart-svg" viewBox="0 0 680 240"></svg>
     <div class="spike-legend" style="margin-top:8px">
       <div class="spike-legend-item"><div class="s-dot" style="background:#7a7060;opacity:0.5"></div> 2023</div>
-      <div class="spike-legend-item"><div class="s-dot" style="background:#1e72b0;opacity:0.7"></div> 2024</div>
-      <div class="spike-legend-item"><div class="s-dot" style="background:#1e72b0"></div> 2025</div>
-      <div class="spike-legend-item"><div class="s-dot" style="background:#8a6820"></div> 2026 (through Mar)</div>
-      <div class="spike-legend-item"><div class="ann-badge ann-badge-spike" style="width:14px;height:14px;font-size:8px">▲</div> Aug early Halloween spike</div>
+      <div class="spike-legend-item"><div class="s-dot" style="background:#8a6820;opacity:0.6"></div> 2024</div>
+      <div class="spike-legend-item"><div class="s-dot" style="background:#8a6820"></div> 2025</div>
+      <div class="spike-legend-item"><div class="s-dot" style="background:#1e72b0"></div> 2026 (through Mar)</div>
     </div>
   </div>
 
@@ -1623,9 +1622,9 @@ const YT_SPIKES = [
     [y23,'2023','#1e72b0','0.4'],
     [y24,'2024','#1e72b0','0.7'],
     [y25,'2025','#1e72b0','1'],
-  ].forEach(([data,label,color,op])=>{
+  ].forEach(([data,label,color,op],fi)=>{
     const ey=ptY(data[11],maxP,H,pad.t,pad.b);
-    h+=`<text x="${(ex+6).toFixed(1)}" y="${(ey+4).toFixed(1)}" font-size="9" fill="${color}" font-family="monospace" opacity="${op}">${label}</text>`;
+    h+=`<text x="${(ex+6).toFixed(1)}" y="${(ey+4+fi*12).toFixed(1)}" font-size="9" fill="${color}" font-family="monospace" opacity="${op}">${label}</text>`;
   });
   // 2026 label at Mar (idx 2)
   const ex26=ptX(2,months12,W,pad.l,pad.r);
