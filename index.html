@@ -1608,23 +1608,28 @@ const YT_SPIKES = [
   drawLine(y26,'#8a6820','1','');  // gold, stops at Mar
 
   // August spike markers on 2024 (idx 7) and 2025 (idx 7)
-  [[y24,'#1e72b0','0.7'],[y25,'#1e72b0','1']].forEach(([data,color,op])=>{
+  [[y24,'#1e72b0','0.7'],[y25,'#1e72b0','1']].forEach(([data,color,op],i)=>{
     const x=ptX(7,months12,W,pad.l,pad.r);
     const y=ptY(data[7],maxP,H,pad.t,pad.b);
     h+=`<rect x="${(x-4).toFixed(1)}" y="${(y-4).toFixed(1)}" width="8" height="8" fill="${color}" opacity="${op}" transform="rotate(45,${x.toFixed(1)},${y.toFixed(1)})"/>`;
-    h+=`<text x="${x.toFixed(1)}" y="${(y-10).toFixed(1)}" font-size="8" fill="${color}" font-family="monospace" text-anchor="middle" opacity="${op}">Aug</text>`;
+    const labelY = i===0 ? y+18 : y-10; // 2024 label below spike, 2025 above
+    h+=`<text x="${x.toFixed(1)}" y="${labelY.toFixed(1)}" font-size="8" fill="${color}" font-family="monospace" text-anchor="middle" opacity="${op}">Aug</text>`;
   });
 
-  // Year end labels
+  // Year end labels — sort by natural y position, enforce 12px min gap
   const ex=ptX(11,months12,W,pad.l,pad.r);
-  [
-    [y22,'2022','#7a7060','0.5'],
-    [y23,'2023','#1e72b0','0.4'],
-    [y24,'2024','#1e72b0','0.7'],
-    [y25,'2025','#1e72b0','1'],
-  ].forEach(([data,label,color,op],fi)=>{
-    const ey=ptY(data[11],maxP,H,pad.t,pad.b);
-    h+=`<text x="${(ex+6).toFixed(1)}" y="${(ey+4+fi*12).toFixed(1)}" font-size="9" fill="${color}" font-family="monospace" opacity="${op}">${label}</text>`;
+  const endLabels=[
+    {data:y22,label:'2022',color:'#7a7060',op:'0.5'},
+    {data:y23,label:'2023',color:'#1e72b0',op:'0.4'},
+    {data:y24,label:'2024',color:'#1e72b0',op:'0.7'},
+    {data:y25,label:'2025',color:'#1e72b0',op:'1'},
+  ].map(d=>Object.assign(d,{ey:ptY(d.data[11],maxP,H,pad.t,pad.b)}));
+  endLabels.sort((a,b)=>a.ey-b.ey);
+  for(let i=1;i<endLabels.length;i++){
+    if(endLabels[i].ey < endLabels[i-1].ey+12) endLabels[i].ey=endLabels[i-1].ey+12;
+  }
+  endLabels.forEach(d=>{
+    h+=`<text x="${(ex+6).toFixed(1)}" y="${(d.ey+4).toFixed(1)}" font-size="9" fill="${d.color}" font-family="monospace" opacity="${d.op}">${d.label}</text>`;
   });
   // 2026 label at Mar (idx 2)
   const ex26=ptX(2,months12,W,pad.l,pad.r);
