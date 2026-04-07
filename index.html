@@ -1568,7 +1568,7 @@ const YT_SPIKES = [
 (function(){
   const svg=document.getElementById('yoyRedditChart');
   if(!svg) return;
-  const W=680, H=240, pad={t:20,r:30,b:36,l:50};
+  const W=680, H=240, pad={t:20,r:44,b:36,l:50};
   const maxP=4000;
   // Split BBW_POSTS by year (Jan 2022 = index 0)
   const y22=BBW_POSTS.slice(0,12);   // 12 months
@@ -1681,32 +1681,39 @@ const YT_SPIKES = [
     h+=`<path d="${d}" fill="none" stroke="${color}" stroke-width="1.8" opacity="${opacity}"${dasharray?` stroke-dasharray="${dasharray}"`:''}/>`;
   }
 
+  // Colors: 2023=gray dashed, 2024=gold 60%, 2025=gold 100%, 2026=blue
   drawLine(yt23,'#7a7060','0.45','4 3');
-  drawLine(yt24,'#1e72b0','0.7','');
-  drawLine(yt25,'#1e72b0','1','');
-  drawLine(yt26,'#8a6820','1','');
+  drawLine(yt24,'#8a6820','0.6','');
+  drawLine(yt25,'#8a6820','1','');
+  drawLine(yt26,'#1e72b0','1','');
 
-  // August spike markers (idx 7)
-  [[yt24,'#1e72b0','0.7'],[yt25,'#1e72b0','1']].forEach(([data,color,op])=>{
+  // August spike markers (idx 7) — 2024 label below, 2025 label above
+  [[yt24,'#8a6820','0.6'],[yt25,'#8a6820','1']].forEach(([data,color,op],i)=>{
     const x=ptX(7,months12,W,pad.l,pad.r);
     const y=ptY(data[7],maxV,H,pad.t,pad.b);
     h+=`<rect x="${(x-4).toFixed(1)}" y="${(y-4).toFixed(1)}" width="8" height="8" fill="${color}" opacity="${op}" transform="rotate(45,${x.toFixed(1)},${y.toFixed(1)})"/>`;
-    h+=`<text x="${x.toFixed(1)}" y="${(y-10).toFixed(1)}" font-size="8" fill="${color}" font-family="monospace" text-anchor="middle" opacity="${op}">Aug</text>`;
+    const labelY = i===0 ? y+18 : y-10;
+    h+=`<text x="${x.toFixed(1)}" y="${labelY.toFixed(1)}" font-size="8" fill="${color}" font-family="monospace" text-anchor="middle" opacity="${op}">Aug</text>`;
   });
 
-  // Year end labels
+  // Year end labels — sort by natural y, enforce 12px min gap
   const ex=ptX(11,months12,W,pad.l,pad.r);
-  [
-    [yt23,'2023','#7a7060','0.5'],
-    [yt24,'2024','#1e72b0','0.7'],
-    [yt25,'2025','#1e72b0','1'],
-  ].forEach(([data,label,color,op])=>{
-    const ey=ptY(data[11],maxV,H,pad.t,pad.b);
-    h+=`<text x="${(ex+6).toFixed(1)}" y="${(ey+4).toFixed(1)}" font-size="9" fill="${color}" font-family="monospace" opacity="${op}">${label}</text>`;
+  const endLabels=[
+    {data:yt23,label:'2023',color:'#7a7060',op:'0.5'},
+    {data:yt24,label:'2024',color:'#8a6820',op:'0.6'},
+    {data:yt25,label:'2025',color:'#8a6820',op:'1'},
+  ].map(d=>Object.assign(d,{ey:ptY(d.data[11],maxV,H,pad.t,pad.b)}));
+  endLabels.sort((a,b)=>a.ey-b.ey);
+  for(let i=1;i<endLabels.length;i++){
+    if(endLabels[i].ey < endLabels[i-1].ey+12) endLabels[i].ey=endLabels[i-1].ey+12;
+  }
+  endLabels.forEach(d=>{
+    h+=`<text x="${(ex+6).toFixed(1)}" y="${(d.ey+4).toFixed(1)}" font-size="9" fill="${d.color}" font-family="monospace" opacity="${d.op}">${d.label}</text>`;
   });
+  // 2026 label at Mar position — blue
   const ex26=ptX(2,months12,W,pad.l,pad.r);
   const ey26=ptY(yt26[2],maxV,H,pad.t,pad.b);
-  h+=`<text x="${(ex26+5).toFixed(1)}" y="${(ey26-6).toFixed(1)}" font-size="9" fill="#8a6820" font-family="monospace">2026</text>`;
+  h+=`<text x="${(ex26+5).toFixed(1)}" y="${(ey26-6).toFixed(1)}" font-size="9" fill="#1e72b0" font-family="monospace">2026</text>`;
 
   svg.innerHTML=h;
 
